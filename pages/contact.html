@@ -4,38 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-grid.css">
     <title>Contacto</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon-32x32.png">
 </head>
 <body>
-    <header> 
-        <nav> 
-            <div class="upper-bar">
-                <img src="../img/original.png" alt="Bookero logo">
+    <nav class="nav">
+        <div class="upper-nav">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Bookero logo">
                 <h1>Alexandria</h1>
-                <div class="search-bar">
-                    <input type="text" placeholder="Ingresar título, autor o género..." class="search-input">
-                    <button class="search-button">Buscar</button>
-                </div>
-                <ul class="links-bar">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/books.html">Libros</a></li>
-                    <li><a href="../pages/book-of-the-day.html">Libro del día</a></li>
-                    <li><a href="../pages/contact.html">Contacto</a></li>
-                    <li><a href="../pages/user.html">Usuario</a></li>
-                </ul>
             </div>
-            
-        </nav>
-    </header>
+            <ul class="links">
+                <li><a href="../index-grid.html">Inicio</a></li>
+                <li><a href="../pages/books.html">Libros</a></li>
+                <li><a href="../pages/book-of-the-day.html">Libro del día</a></li>
+                <li><a href="../pages/contact.html">Contacto</a></li>
+                <li><a href="../pages/user.html">Usuario</a></li>
+            </ul>
+        </div>
+        <div class="lower-nav">
+            <input type="text" placeholder="Ingresar título, autor o género..." class="search-input">
+            <button class="search-button">Buscar</button>
+        </div>
+    </nav>
     <main>
-        <section class="banner-books">
-            <div class="welcome">
-                <h2>Comparte tus comentarios o consultas con nosotros</h2>
-            </div>
-        </section>
         <section class="contact-panel">
+            <h2>Comparte tus comentarios o consultas con nosotros</h2>
             <form action="" method="" enctype="" class="form-contact">
                 <div>
                     <h3><label for="nombre">Nombre: </label></h3>
@@ -86,18 +81,18 @@
                     <input type="reset" value="Cancelar">
                 </div>
             </form>
-            <img src="../img/contact.png" alt="Contact">
+            <img src="../img/book-club.jpg" alt="Contact">
         </section>
     </main>
-    <footer class="footer"> 
-        <div class="social-media-container">
-            <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Facebook icon"></a>
-            <a href="https://twitter.com" target="_blank"><img src="../img/twitter.png" alt="Twitter icon"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Instagram icon"></a>
-            <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt="Whatsapp icon"></a>
-            <a href="https://www.tiktok.com/" target="_blank"><img src="../img/tiktok.png" alt="Tik Tok icon"></a>
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target="_blank"><img src="../img/social-media/facebook.png" alt="Facebook icon"></a>
+            <a href="https://twitter.com" target="_blank"><img src="../img/social-media/twitter.png" alt="Twitter icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../img/social-media/instagram.png" alt="Instagram icon"></a>
+            <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/social-media/whatsapp.png" alt="Whatsapp icon"></a>
+            <a href="https://www.tiktok.com/" target="_blank"><img src="../img/social-media/tiktok.png" alt="Tik Tok icon"></a>
         </div>
-        <div class="information-container">
+        <div class="site-information">
             <a href="">Trabajá con nosotros</a>
             <a href="">Términos y condiciones</a>
             <a href="">Accesibilidad</a>
