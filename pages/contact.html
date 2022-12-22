@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style-grid.css">
-    <title>Contacto</title>
-    <link rel="icon" type="image/x-icon" href="../img/favicon-32x32.png">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style-grid.css">
+        <title>Contacto</title>
+        <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Corinthia:wght@700&display=swap" rel="stylesheet"> 
+    </head>
 <body>
+    <div class="grid-container-contact">
     <nav class="nav">
         <div class="upper-nav">
             <div class="logo">
@@ -29,37 +34,42 @@
         </div>
     </nav>
     <main>
-        <section class="contact-panel">
-            <h2>Comparte tus comentarios o consultas con nosotros</h2>
-            <form action="" method="" enctype="" class="form-contact">
-                <div>
+        <section class="form-section">
+            <form action="" method="" enctype="" class="contact-form">
+                <div class="form-data">
                     <h3><label for="nombre">Nombre: </label></h3>
                     <input type="text" id="nombre" size="30px">
                 </div>
-                <div>
+                <div class="form-data">
                     <h3><label for="apellido">Apellido: </label></h3>
                     <input type="text" id="apellido" size="30px">
                 </div>
-                <div>
+                <div class="form-data">
                     <h3><label for="correo">Correo: </label></h3>
                     <input type="email" id="correo" size="30px">
                 </div>
-                <div>
+                <div class="form-data">
                     <h3><label for="contrasena">Contraseña: </label></h3>
                     <input type="password" id="contrasena" size="30px">
                 </div>
-                <div>
+                <div class="form-data">
                     <h3>Genero: </h3>
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" name="genero">
-                    <label for="femenino">Femenino</label>
-                    <input type="radio" name="genero">
-                    <label for="otro">Otro</label>
-                    <input type="radio" name="genero">
+                    <div>
+                        <label for="masculino" class="genre">Masculino</label>
+                        <input type="radio" name="genero">
+                    </div>
+                    <div>
+                        <label for="femenino" class="genre">Femenino</label>
+                        <input type="radio" name="genero">
+                    </div>
+                    <div>
+                        <label for="otro" class="genre">Otro</label>
+                        <input type="radio" name="genero">
+                    </div>
                 </div>
-                <div>
-                    <h3><label for="select">Pais</label></h3>
-                    <select name="select" id="">
+                <div class="form-data form-data-country">
+                    <h3><label for="select">Pais:</label></h3>
+                    <select name="select" id="" class="countries">
                         <option value="">Argentina</option>
                         <option value="">Bolivia</option>
                         <option value="">Brasil</option>
@@ -72,18 +82,22 @@
                         <option value="">Venezuela</option>
                     </select>
                 </div>
-                <div>
-                    <h3>Comentario</h3>
-                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                <div class="form-data">
+                    <h3>Comentario:</h3>
+                    <textarea name="" id="" cols="40" rows="7"></textarea>
                 </div>
                 <div class="buttons">
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Cancelar">
                 </div>
             </form>
-            <img src="../img/book-club.jpg" alt="Contact">
         </section>
+        
     </main>
+    <section class="image-section">
+        <h2>Comparte tus comentarios o consultas con nosotros</h2>
+        <img src="../img/book-club.jpg" alt="Contact" class="contact-image">
+    </section>
     <footer class="footer">
         <div class="social-media">
             <a href="https://www.facebook.com/" target="_blank"><img src="../img/social-media/facebook.png" alt="Facebook icon"></a>
@@ -99,5 +113,6 @@
             <a href="">Ayuda</a>
         </div>
     </footer>
+    </div>
 </body>
 </html>
