@@ -1,138 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Libros</title>
-    <link rel="icon" type="image/x-icon" href="../img/favicon-32x32.png">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="../css/style-grid.css">
+        <title>Libros</title>
+        <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Corinthia:wght@700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap" rel="stylesheet">
+    </head>
 <body>
-    <header> 
-        <nav> 
-            <div class="upper-bar">
-                <img src="../img/original.png" alt="Bookero logo">
-                <h1>Alexandria</h1>
-                <div class="search-bar">
-                    <input type="text" placeholder="Ingresar título, autor o género..." class="search-input">
-                    <button class="search-button">Buscar</button>
+    <div class="grid-container-books">
+        <nav class="nav">
+            <div class="upper-nav">
+                <div class="logo">
+                    <img src="../img/logo.png" alt="Bookero logo">
+                    <h1>Alexandria</h1>
                 </div>
-                <ul class="links-bar">
-                    <li><a href="../index.html">Inicio</a></li>
+                <ul class="links">
+                    <li><a href="../index-grid.html">Inicio</a></li>
                     <li><a href="../pages/books.html">Libros</a></li>
                     <li><a href="../pages/book-of-the-day.html">Libro del día</a></li>
                     <li><a href="../pages/contact.html">Contacto</a></li>
                     <li><a href="../pages/user.html">Usuario</a></li>
                 </ul>
             </div>
-            
+            <div class="lower-nav">
+                <input type="text" placeholder="Ingresar título, autor o género..." class="search-input">
+                <button class="search-button">Buscar</button>
+            </div>
         </nav>
-    </header>
-    <main>
-        <section class="banner-books">
-            <div class="welcome">
-                <h2>Revisa nuestro catalogo de mas de 1 millon de libros y elegi el que mas te guste.</h2>
-            </div>
-        </section>
-        <section class="gallery">
-            <div class="column">
-                <div class="book-card">
-                    <img src="../img/1984.jpg" alt="1984">
-                    <div class="book-info">
-                        <h2>TITULO: 1984</h2>
-                        <h3>AUTOR: George Orwell</h3>
-                        <h3>AÑO: 1949</h3>
-                        <h3>GENERO: Ficción distópica</h3>
-                        <h3>PUNTAJE: 9/10</h3>
+        <main class="grid-container-books-sections">
+            <section class="section">
+                <h2>Novedades</h2>
+                <div class="books-header">
+                    <ul class="letters">
+                        <li><a href="">A</a></li><li><a href="">B</a></li><li><a href="">C</a></li><li><a href="">D</a></li><li><a href="">E</a></li><li><a href="">F</a></li><li><a href="">G</a></li><li><a href="">H</a></li><li><a href="">I</a></li><li><a href="">J</a></li><li><a href="">K</a></li><li><a href="">L</a></li><li><a href="">M</a></li><li><a href="">N</a></li><li><a href="">Ñ</a></li><li><a href="">O</a></li><li><a href="">P</a></li><li><a href="">Q</a></li><li><a href="">R</a></li><li><a href="">S</a></li><li><a href="">T</a></li><li><a href="">U</a></li><li><a href="">V</a></li><li><a href="">W</a></li><li><a href="">X</a></li><li><a href="">Y</a></li><li><a href="">Z</a></li>
+                    </ul> 
+                </div>
+                <div class="books-content">
+                    <div class="card">
+                        <img src="../img/books/Courtiers.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Courtiers: The hidden power behind the crown</h5>
+                          <p class="card-text">Valentine Low</p>
+                        </div>
                     </div>
-                    <div class="short-review">
-                        <h3>RESEÑA</h3>
-                        <p>
-                            El personaje principal de la novela es Winston Smith, que trabaja en el Ministerio de la Verdad. Su cometido es reescribir la historia, ironizando así el ideal declarado en el nombre del Ministerio. Tras años trabajando para dicho Ministerio, Winston Smith se va volviendo consciente de que los retoques de la historia en los que consiste su trabajo son solo una parte de la gran farsa en la que se basa su gobierno, y descubre la falsedad intencionada de todas las informaciones procedentes del Partido Único. En su ansia de evadir la omnipresente vigilancia del Gran Hermano (que llega inclusive a todas las casas) encuentra el amor de una joven rebelde llamada Julia, también desengañada del sistema político; ambos encarnan así una resistencia de dos contra una sociedad que se vigila a sí misma. 
-                        </p>
+                    <div class="card">
+                        <img src="../img/books/I'm Glad My Mom Died.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">I'm Glad My Mom Died</h5>
+                          <p class="card-text">Jennette McCurdy</p>
+                        </div>
                     </div>
-                    <div class="book-comments">
-                        <h3>COMENTARIOS</h3>
-                        <ul>
-                            <li>Muy buen libro. Me atrapó desde el principio hasta el final. Super recomendable.</li>
-                            <li>Excelente. Un clásico del género. Una lectura obligada para todo el mundo.</li>
-                            <li>Me encanto y me asusto por momentos. Es terrorifico pensar en un mundo asi.</li>
-                            <li>La verdad me quedé dormido en el quinto capítulo así que no termine de leerlo.</li>
-                        </ul>
+                    <div class="card">
+                        <img src="../img/books/The Bullet That Missed.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">The Bullet That Missed</h5>
+                          <p class="card-text">Richard Osman</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/books/13 con 99 Euros.jpeg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">13 con 99 Euros</h5>
+                          <p class="card-text">Frédéric Beigbeder</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/books/Fairy Tale.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Fairy Tale</h5>
+                          <p class="card-text">Stephen King</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="book-card">
-                    <img src="../img/Sumision.jpeg" alt="Sumision">
-                    <div class="book-info">
-                        <h2>TITULO: Sumision</h2>
-                        <h3>AUTOR: Michel Houellebecq</h3>
-                        <h3>AÑO: 2015</h3>
-                        <h3>GENERO: Ficción política</h3>
-                        <h3>PUNTAJE: 8/10</h3>
+            </section>
+            <section class="section">
+                <h2>Recomendados</h2>
+                <div class="books-header">
+                    <ul class="letters">
+                        <li><a href="">A</a></li><li><a href="">B</a></li><li><a href="">C</a></li><li><a href="">D</a></li><li><a href="">E</a></li><li><a href="">F</a></li><li><a href="">G</a></li><li><a href="">H</a></li><li><a href="">I</a></li><li><a href="">J</a></li><li><a href="">K</a></li><li><a href="">L</a></li><li><a href="">M</a></li><li><a href="">N</a></li><li><a href="">Ñ</a></li><li><a href="">O</a></li><li><a href="">P</a></li><li><a href="">Q</a></li><li><a href="">R</a></li><li><a href="">S</a></li><li><a href="">T</a></li><li><a href="">U</a></li><li><a href="">V</a></li><li><a href="">W</a></li><li><a href="">X</a></li><li><a href="">Y</a></li><li><a href="">Z</a></li>
+                    </ul> 
+                </div>
+                <div class="books-content">
+                    <div class="card">
+                        <img src="../img/books/Lessons.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Lessons</h5>
+                          <p class="card-text">Ian McEwan</p>
+                        </div>
                     </div>
-                    <div class="short-review">
-                        <h3>RESEÑA</h3>
-                        <p>
-                            François, un profesor de literatura, siente que ha llegado el fin de su vida. Pero en la Francia de 2022, Mohammed Ben Abbes, un político carismático del partido político ficticio Fraternidad Musulmana gana las elecciones presidenciales y se hace con la gestión de la nación. Una vez en el cargo, realiza varios cambios: trabaja en la pacificación de la nación francesa, privatiza la principal universidad de Francia, convirtiéndola en una universidad islámica, cambia algunas leyes, anula el derecho de igualdad entre hombres y mujeres a la par que permite la poligamia y planea hacer de la Unión Europea un nuevo "Imperio Romano" islámico, con Francia como eje central. 
-                        </p>
+                    <div class="card">
+                        <img src="../img/books/Before the Coffee Gets Cold.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Before the Coffee Gets Cold</h5>
+                          <p class="card-text">Toshikazu Kawaguchi</p>
+                        </div>
                     </div>
-                    <div class="book-comments">
-                        <h3>COMENTARIOS</h3>
-                        <ul>
-                            <li>Me encantó. Me encantan todos los libros de este autor.</li>
-                            <li>Entretenido aunque un poco sobrevalorado a mi criterio.</li>
-                            <li>Me parece un libro despreciable, no me gustó para nada, me pareció sumamente ofensivo</li>
-                            <li>Me quedé dormido después de las primeras páginas, asi que no se muy bien que decir sobre el libro</li>
-                        </ul>
+                    <div class="card">
+                        <img src="../img/books/Vagabond Vol 4.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Vagabond Vol. 4</h5>
+                          <p class="card-text">Takehiko Inoue</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/books/The Seven Moons of Maali Almeida.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">The Seven Moons of Maali Almeida</h5>
+                          <p class="card-text">Shehan Karunatilaka</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/books/The Trees.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">The Trees</h5>
+                          <p class="card-text">Percival Everett</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="book-card">
-                    <img src="../img/On the Road.jpg" alt="On the Road">
-                    <div class="book-info">
-                        <h2>TITULO: On the Road</h2>
-                        <h3>AUTOR: Jack Kerouac</h3>
-                        <h3>Año: 1957</h3>
-                        <h3>GENERO: Novela / Autobiográfica</h3>
-                        <h3>PUNTAJE: 7.5/10</h3>
+            </section>
+            <section class="section">
+                <h2>Generos</h2>
+                <div class="books-header">
+                    <ul class="letters">
+                        <li><a href="">A</a></li><li><a href="">B</a></li><li><a href="">C</a></li><li><a href="">D</a></li><li><a href="">E</a></li><li><a href="">F</a></li><li><a href="">G</a></li><li><a href="">H</a></li><li><a href="">I</a></li><li><a href="">J</a></li><li><a href="">K</a></li><li><a href="">L</a></li><li><a href="">M</a></li><li><a href="">N</a></li><li><a href="">Ñ</a></li><li><a href="">O</a></li><li><a href="">P</a></li><li><a href="">Q</a></li><li><a href="">R</a></li><li><a href="">S</a></li><li><a href="">T</a></li><li><a href="">U</a></li><li><a href="">V</a></li><li><a href="">W</a></li><li><a href="">X</a></li><li><a href="">Y</a></li><li><a href="">Z</a></li>
+                    </ul> 
+                </div>
+                <div class="books-content">
+                    <div class="card">
+                        <img src="../img/genres/Terror.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Terror</h5>
+                          <p class="card-text">298 publicaciones</p>
+                        </div>
                     </div>
-                    <div class="short-review">
-                        <h3>RESEÑA</h3>
-                        <p>
-                            Con un inconfundible estilo bop, que consiguió para Kerouac el título de «heredero de Charlie Parker» en esta novela se narran los viajes enloquecidos, a bordo de Cadillacs prestados y Dodges desvencijados, de Dean Moriarty, el mítico hipster, el héroe de todos los beatniks, «un demente, un ángel, un pordiosero» y el narrador Sal Paradise, recorriendo el continente, de Nueva York a Nueva Orleans, Ciudad de México, San Francisco, Chicago y regreso a Nueva York. Alcohol, orgías, marihuana, éxtasis, angustia y desolación, el retrato de una América subterránea, auténtica y desinhibida, ajena a todo establishment. Una crónica cuyos protagonistas, en la vida real y en el libro, fueron Jack Kerouac (Sal Paradise), Neal Cassady (Dean Moriarty), Allen Ginsberg, William Burroughs. 
-                        </p>
+                    <div class="card">
+                        <img src="../img/genres/Romance.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Romance</h5>
+                          <p class="card-text">501 publicaciones</p>
+                        </div>
                     </div>
-                    <div class="book-comments">
-                        <h3>COMENTARIOS</h3>
-                        <ul>
-                            <li>Espectacular. Es una historia atrapante y emocionante.</li>
-                            <li>Muy bueno. Me encanto sobre todo la parte que viajan a México, cerca del final del libro</li>
-                            <li>Aburridisimo. No entiendo el atractivo de esta clase de libros, no le veo el sentido al relato.</li>
-                            <li>Me quedé dormido después de los primeros tres párrafos. Creo que tengo narcolepsia.</li>
-                        </ul>
+                    <div class="card">
+                        <img src="../img/genres/Historic fiction.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Ficcion historica</h5>
+                          <p class="card-text">179 publicaciones</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/genres/Manga.png" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Manga</h5>
+                          <p class="card-text">751 publicaciones</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/genres/Fantasy.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Fantasia</h5>
+                          <p class="card-text">632 publicaciones</p>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <section class="section">
+                <h2>Autores</h2>
+                <div class="books-header">
+                    <ul class="letters">
+                        <li><a href="">A</a></li><li><a href="">B</a></li><li><a href="">C</a></li><li><a href="">D</a></li><li><a href="">E</a></li><li><a href="">F</a></li><li><a href="">G</a></li><li><a href="">H</a></li><li><a href="">I</a></li><li><a href="">J</a></li><li><a href="">K</a></li><li><a href="">L</a></li><li><a href="">M</a></li><li><a href="">N</a></li><li><a href="">Ñ</a></li><li><a href="">O</a></li><li><a href="">P</a></li><li><a href="">Q</a></li><li><a href="">R</a></li><li><a href="">S</a></li><li><a href="">T</a></li><li><a href="">U</a></li><li><a href="">V</a></li><li><a href="">W</a></li><li><a href="">X</a></li><li><a href="">Y</a></li><li><a href="">Z</a></li>
+                    </ul> 
+                </div>
+                <div class="books-content">
+                    <div class="card">
+                        <img src="../img/authors/Ernest Hemingway.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Ernest Hemingway</h5>
+                          <p class="card-text">1899-1961</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/authors/Isabel Allende.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Isabel Allende</h5>
+                          <p class="card-text">1942-actualidad</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/authors/Jack Kerouac.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Jack Kerouac</h5>
+                          <p class="card-text">1922-1969</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/authors/Michel Houellebecq.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Michel Houellebecq</h5>
+                          <p class="card-text">1956-actualidad</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/authors/Marta Sanz.jpg" class="card-img-top" alt="Book card">
+                        <div class="card-body">
+                          <h5 class="card-title">Marta Sanz</h5>
+                          <p class="card-text">1967-actualidad</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../img/social-media/facebook.png" alt="Facebook icon"></a>
+                <a href="https://twitter.com" target="_blank"><img src="../img/social-media/twitter.png" alt="Twitter icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/social-media/instagram.png" alt="Instagram icon"></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/social-media/whatsapp.png" alt="Whatsapp icon"></a>
+                <a href="https://www.tiktok.com/" target="_blank"><img src="../img/social-media/tiktok.png" alt="Tik Tok icon"></a>
             </div>
-        </section>
-    </main>
-    <footer class="footer"> 
-        <div class="social-media-container">
-            <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Facebook icon"></a>
-            <a href="https://twitter.com" target="_blank"><img src="../img/twitter.png" alt="Twitter icon"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Instagram icon"></a>
-            <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt="Whatsapp icon"></a>
-            <a href="https://www.tiktok.com/" target="_blank"><img src="../img/tiktok.png" alt="Tik Tok icon"></a>
-        </div>
-        <div class="information-container">
-            <a href="">Trabajá con nosotros</a>
-            <a href="">Términos y condiciones</a>
-            <a href="">Accesibilidad</a>
-            <a href="">Ayuda</a>
-        </div>
-    </footer>
+            <div class="site-information">
+                <a href="">Trabajá con nosotros</a>
+                <a href="">Términos y condiciones</a>
+                <a href="">Accesibilidad</a>
+                <a href="">Ayuda</a>
+            </div>
+        </footer>
+    </div>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
 </body>
 </html>
