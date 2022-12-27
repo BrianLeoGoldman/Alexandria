@@ -10,6 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Corinthia:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal&display=swap');
 
 /*------------------ INDEX ------------------*/
 
@@ -475,7 +476,158 @@
     margin: 5px;
 }
 
+/*-------------- BOOK OF THE DAY --------------*/
 
+.grid-container-book-of-the-day {
+    margin: 0 auto;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px auto auto 80px;
+    grid-template-areas: 
+    "nav nav nav"
+    "aside main main"
+    "chat chat chat"
+    "footer footer footer";
+}
+
+.book-of-the-day-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.book-of-the-day-info h2 {
+    font-family: 'Linden Hill', serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 3.5rem;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 40%;
+}
+
+.column {
+    width: 50%;
+}
+
+.column h3 {
+    margin-top: 5px;
+    font-family: 'Metal', cursive;
+    font-size: 1.3rem;
+}
+
+.long-review {
+    height: 60%;
+    font-family: 'Linden Hill', serif;
+}
+
+.long-review h3 {
+    font-family: 'Linden Hill', serif;
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.long-review p {
+    font-family: 'Linden Hill', serif;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.book-of-the-day-covers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.main-cover img {
+    border: solid 3px black;
+    height: 500px;
+    width: 425px;
+    margin: 10px;
+}
+
+.secondary-covers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondary-covers img {
+    border: solid 2px black;
+    height: 200;
+    width: 100px;
+    margin: 10px;
+}
+
+.chat-and-comments {
+    grid-area: chat;
+    background-color: #d9b99b;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chat {
+    margin: 15px;
+}
+
+.chat h3 {
+    font-family: 'Linden Hill', serif;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 1.5rem;
+}
+
+.intervention {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.intervention p {
+    font-family: 'Linden Hill', serif;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.intervention img {
+    width: 30px;
+    height: 30px;
+}
+
+.add-discussion {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.add-discussion input {
+    width: 750px;
+    height: 30px;
+}
+
+.add-discussion button {
+    width: 100px;
+    height: 30px;
+    font-size: 1.2rem;
+}
 
 /*------------------ CONTACT ------------------*/
 
