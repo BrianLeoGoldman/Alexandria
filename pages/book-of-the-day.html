@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Libro del día</title>
-    <link rel="icon" type="image/x-icon" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Corinthia:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header> 
-        <nav> 
-            <div class="upper-bar">
-                <img src="../img/original.png" alt="Bookero logo">
-                <h1>Alexandria</h1>
-                <div class="search-bar">
-                    <input type="text" placeholder="Ingresar título, autor o género..." class="search-input">
-                    <button class="search-button">Buscar</button>
+    <div class="grid-container-book-of-the-day">
+        <nav class="nav">
+            <div class="upper-nav">
+                <div class="logo">
+                    <img src="../img/logo.png" alt="Bookero logo">
+                    <h1>Alexandria</h1>
                 </div>
-                <ul class="links-bar">
+                <ul class="links">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="../pages/books.html">Libros</a></li>
                     <li><a href="../pages/book-of-the-day.html">Libro del día</a></li>
@@ -26,73 +31,69 @@
                     <li><a href="../pages/user.html">Usuario</a></li>
                 </ul>
             </div>
-            
+            <div class="lower-nav">
+                <input type="text" placeholder="Ingresar título, autor o género..." class="search-input">
+                <button class="search-button">Buscar</button>
+            </div>
         </nav>
-    </header>
-    <main>
-        <section class="banner-books">
-            <div class="welcome">
-                <h2>Este es nuestro libro del día</h2>
-            </div>
-        </section>
-        <section class="book-of-the-day">
-            <div class="main-cover">
-                <img src="../img/El Origen de las Especies.png" alt="El Origen de las Especies">
-            </div>
-            <div class="secondary-covers">
-                <img src="../img/El Origen de las Especies 2.png" alt="El Origen de las Especies">
-                <img src="../img/El Origen de las Especies 3.png" alt="El Origen de las Especies">
-                <img src="../img/El Origen de las Especies 4.png" alt="El Origen de las Especies">
-            </div>
-            <div class="information">
-                <h2>TITULO: El Origen de las Especies</h2>
-                <h3>AUTOR: Charles Darwin</h3>
-                <h3>AÑO: 1859</h3>
-                <h3>GENERO: Biología evolutiva</h3>
-                <h3>SUBGENERO: Literatura científica</h3>
-                <h3>PAIS: Reino Unido</h3>
-                <h3>TITULO ORIGINAL: On the Origin of Species by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life</h3>
-                <h3>PUNTAJE: 7/10</h3>
-                <h3>DESCARGA: <a href="https://web.archive.org/web/20050718010317/http://embryology.med.unsw.edu.au/pdf/Origin_of_Species.pdf" target="_blank">CLICK AQUI</a></h3>
-            </div>
-            <div class="long-review">
-                <h3>RESEÑA</h3>
-                <p>El origen de las especies es un libro de Charles Darwin publicado el 24 de noviembre de 1859, considerado uno de los trabajos precursores de la literatura científica y el fundamento de la teoría de la biología evolutiva.
-                El título completo de la primera edición fue On the Origin of Species by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life —El origen de las especies por medio de la selección natural, 
-                o la preservación de las razas favorecidas en la lucha por la vida—. En su sexta edición de 1872, el título fue cambiado a uno más corto, On the Origin of Species —El origen de las especies—. El libro de Darwin introdujo la 
-                teoría científica de que las poblaciones evolucionan durante el transcurso de las generaciones mediante un proceso conocido como selección natural. Presentó pruebas de que la diversidad de la vida surgió de la descendencia común 
-                a través de un patrón ramificado de evolución. Darwin incluyó las pruebas que reunió en su expedición en el viaje del Beagle en la década de 1830 y sus descubrimientos posteriores mediante la investigación, la correspondencia y 
-                la experimentación.</p>
-            </div>
-        </section>
-        <section class="user-panel">
-            <div class="long-comments">
-                <h3>COMENTARIOS</h3>
-                <ul>
-                    <li>Lo tuve que leer para la facultad. Un genio Darwin.</li>
-                    <li>Un clasico. Muy bueno. Interesante.</li>
-                    <li>Super interesante. El origen de la biologia moderna.</li>
-                    <li>Es un texto histórico, muy pesado. Recomiendo leer un texto más reciente</li>
-                    <li>Me gusto tanto que nombre a mi hijo Darwin.</li>
-                </ul>
-                <div class="add-comment">
-                    <input type="text" placeholder="Comenta lo que quieras" class="">
-                    <button class="">Comentar</button>
+        
+        <main class="main">
+            <section class="book-of-the-day-info">
+                <h2>El Origen de las Especies</h2>
+                <div class="information">
+                    <div class="column">
+                        <h3>AUTOR: Charles Darwin</h3>
+                        <h3>AÑO: 1859</h3>
+                        <h3>GENERO: Biología evolutiva</h3>
+                        <h3>SUBGENERO: Literatura científica</h3>
+                        <h3>PAIS: Reino Unido</h3>
+                    </div>
+                    <div class="column">
+                        <h3>TITULO ORIGINAL: On the Origin of Species by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life</h3>
+                        <h3>PUNTAJE: 7/10</h3>
+                        <h3>DESCARGA: <a href="https://web.archive.org/web/20050718010317/http://embryology.med.unsw.edu.au/pdf/Origin_of_Species.pdf" target="_blank">CLICK AQUI</a></h3>
+                    </div>
                 </div>
-            </div>
-            <div class="discussion">
-                <h3>DISCUSION</h3>
+                <div class="long-review">
+                    <h3>RESEÑA</h3>
+                    <p>El origen de las especies es un libro de Charles Darwin publicado el 24 de noviembre de 1859, considerado uno de los trabajos precursores de la literatura científica y el fundamento de la teoría de la biología evolutiva.
+                    El título completo de la primera edición fue On the Origin of Species by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life —El origen de las especies por medio de la selección natural, 
+                    o la preservación de las razas favorecidas en la lucha por la vida—. En su sexta edición de 1872, el título fue cambiado a uno más corto, On the Origin of Species —El origen de las especies—. El libro de Darwin introdujo la 
+                    teoría científica de que las poblaciones evolucionan durante el transcurso de las generaciones mediante un proceso conocido como selección natural. Presentó pruebas de que la diversidad de la vida surgió de la descendencia común 
+                    a través de un patrón ramificado de evolución. Darwin incluyó las pruebas que reunió en su expedición en el viaje del Beagle en la década de 1830 y sus descubrimientos posteriores mediante la investigación, la correspondencia y 
+                    la experimentación.</p>
+                </div>
+            </section>
+        </main>
+        <aside class="aside">
+            <section class="book-of-the-day-covers">
+                <div class="main-cover">
+                    <img src="../img/books/El Origen de las Especies.png" alt="El Origen de las Especies">
+                </div>
+                <div class="secondary-covers">
+                    <img src="../img/books/El Origen de las Especies 2.png" alt="El Origen de las Especies">
+                    <img src="../img/books/El Origen de las Especies 3.png" alt="El Origen de las Especies">
+                    <img src="../img/books/El Origen de las Especies 4.png" alt="El Origen de las Especies">
+                </div>
+            </section>
+        </aside>
+        <section class="chat-and-comments">
+            <div class="chat">
+                <h3>CHAT</h3>
                 <div class="intervention">
-                    <p>ANA LAURA: Amo este libro. ¿Alguien más?</p><img src="../img/emoticon 1.png" alt="happy">
+                    <img src="../img/icon 1.png" alt="turtle"><p>ANA LAURA: Amo este libro. Lo lei hace muchos años pero aun recuerdo el impacto que me provoco al leerlo. ¿A quien mas le gustó?</p>
                 </div>
                 <div class="intervention">
-                    <p>JUAN PABLO.: A mí!. Me gusta la parte de los mamíferos</p><img src="../img/emoticon 2.png" alt="bear">
+                    <img src="../img/icon 2.png" alt="turtle"><p>JUAN PABLO: ¡A mí me encantó!. Me gusta especialmente el capítulo donde habla de los mamíferos. Es un clásico sin dudas</p>
                 </div>
                 <div class="intervention">
-                    <p>MARTIN: Si. Es impresionante lo que logro con el viaje del Beagle</p><img src="../img/emoticon 3.png" alt="boat">
+                    <img src="../img/icon 3.png" alt="turtle"><p>MARTIN: Si. Es impresionante lo que logro con el viaje del Beagle. Realmente la biología moderna comenzó gracias a Charles Darwin y el trabajo que hizo en este libro</p>
                 </div>
                 <div class="intervention">
-                    <p>SUSANA: Yo lei mucho sobre su trabajo en las Galápagos</p><img src="../img/emoticon 4.png" alt="turtle">
+                    <img src="../img/icon 1.png" alt="turtle"><p>ANA LAURA: ¿Alguien sabe mas del tema? Estoy interesada...</p>
+                </div>
+                <div class="intervention">
+                    <img src="../img/icon 4.png" alt="turtle"><p>SUSANA: Yo lei mucho sobre su trabajo en las Galápagos. Pueden contactarme si quieren saber más del tema</p>
                 </div>
                 <div class="add-discussion">
                     <input type="text" placeholder="Participa de la conversación" class="">
@@ -100,21 +101,21 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="footer"> 
-        <div class="social-media-container">
-            <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Facebook icon"></a>
-            <a href="https://twitter.com" target="_blank"><img src="../img/twitter.png" alt="Twitter icon"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Instagram icon"></a>
-            <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt="Whatsapp icon"></a>
-            <a href="https://www.tiktok.com/" target="_blank"><img src="../img/tiktok.png" alt="Tik Tok icon"></a>
-        </div>
-        <div class="information-container">
-            <a href="">Trabajá con nosotros</a>
-            <a href="">Términos y condiciones</a>
-            <a href="">Accesibilidad</a>
-            <a href="">Ayuda</a>
-        </div>
-    </footer>
+        <footer class="footer">
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../img/social-media/facebook.png" alt="Facebook icon"></a>
+                <a href="https://twitter.com" target="_blank"><img src="../img/social-media/twitter.png" alt="Twitter icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/social-media/instagram.png" alt="Instagram icon"></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/social-media/whatsapp.png" alt="Whatsapp icon"></a>
+                <a href="https://www.tiktok.com/" target="_blank"><img src="../img/social-media/tiktok.png" alt="Tik Tok icon"></a>
+            </div>
+            <div class="site-information">
+                <a href="">Trabajá con nosotros</a>
+                <a href="">Términos y condiciones</a>
+                <a href="">Accesibilidad</a>
+                <a href="">Ayuda</a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

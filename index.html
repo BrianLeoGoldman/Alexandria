@@ -11,174 +11,95 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Corinthia:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="grid-container">
-        <header class="header"> 
-            <nav> 
-                <div class="upper-bar">
-                    <img src="./img/original.png" alt="Bookero logo">
+    <div class="grid-container-index">
+        <nav class="nav">
+            <div class="upper-nav">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="Bookero logo">
                     <h1>Alexandria</h1>
-                    <div class="search-bar">
-                        <input type="text" placeholder="Ingresar título, autor o género..." class="search-input">
-                        <button class="search-button">Buscar</button>
-                    </div>
-                    <ul class="links-bar">
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./pages/books.html">Libros</a></li>
-                        <li><a href="./pages/book-of-the-day.html">Libro del día</a></li>
-                        <li><a href="./pages/contact.html">Contacto</a></li>
-                        <li><a href="./pages/user.html">Usuario</a></li>
-                    </ul>
                 </div>
-            </nav>
+                <ul class="links">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/books.html">Libros</a></li>
+                    <li><a href="./pages/book-of-the-day.html">Libro del día</a></li>
+                    <li><a href="./pages/contact.html">Contacto</a></li>
+                    <li><a href="./pages/user.html">Usuario</a></li>
+                </ul>
+            </div>
+            <div class="lower-nav">
+                <input type="text" placeholder="Ingresar título, autor o género..." class="search-input">
+                <button class="search-button">Buscar</button>
+            </div>
+        </nav>
+        <header class="header">
+            <img src="./img/reading-left.png" alt="Reader">
+            <div class="welcome">
+                <h1>Alexandria</h1>
+                <h2>Un sitio para los amantes de los libros</h2>
+            </div>
+            <img src="./img/reading-right.png" alt="Reader">
         </header>
         <main class="main">
-            <section class="banner-index">
-                <img src="./img/reading-left.png" alt="Person reading">
-                <div class="welcome-index">
-                    <h1>Alexandria</h1>
-                    <h2>Un sitio para los amantes de los libros</h2>
-                </div>
-                <img src="./img/reading-right.png" alt="Person reading">
-                
-            </section>
-            <section class="showroom">
-                <div class="row">
-                    <div class="column">
-                        <div class="book-card-index">
-                            <img src="./img/1984.jpg" alt="1984">
-                            <div class="book-info-index">
-                                <h2>Título: 1984</h2>
-                                <h3>Autor: George Orwell</h3>
-                                <h3>Año: 1949</h3>
-                                <h3>Género: Ficción distópica</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="book-card-index">
-                            <img src="./img/Sumision.jpeg" alt="Sumision">
-                            <div class="book-info-index">
-                                <h2>Título: Sumision</h2>
-                                <h3>Autor: Michel Houellebecq</h3>
-                                <h3>Año: 2015</h3>
-                                <h3>Género: Ficción política</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="book-card-index">
-                            <img src="./img/On the Road.jpg" alt="On the Road">
-                            <div class="book-info-index">
-                                <h2>Título: On the Road</h2>
-                                <h3>Autor: Jack Kerouac</h3>
-                                <h3>Año: 1957</h3>
-                                <h3>Género: Novela / Autobiográfica</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <div class="book-card-index">
-                            <img src="./img/13 con 99 Euros.jpeg" alt="13,99 euros">
-                            <div class="book-info-index">
-                                <h2>Título: 13,99 euros</h2>
-                                <h3>Autor: Frédérick Beigbeder</h3>
-                                <h3>Año: 2001</h3>
-                                <h3>Género: Novela</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="book-card-index">
-                            <img src="./img/Dialectica del Iluminismo.jpg" alt="Dialéctica del Iluminismo">
-                            <div class="book-info-index">
-                                <h2>Título: Dialéctica del Iluminismo</h2>
-                                <h3>Autor: Max Horkheimer, Theodor Adorno</h3>
-                                <h3>Año: 1944</h3>
-                                <h3>Género: Filosofía / Crítica social</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="book-card-index">
-                            <img src="./img/Harry Potter.jpg" alt="Harry Potter and the Philosopher's Stone">
-                            <div class="book-info-index">
-                                <h2>Título: Harry Potter and the Philosopher's Stone</h2> 
-                                <h3>Autor: J. K. Rowling</h3>
-                                <h3>Año: 1997</h3>
-                                <h3>Género: Literatura fantástica</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>     
-                <div class="row">
-                    <div class="column">
-                        <div class="book-card-index">
-                            <img src="./img/El Origen de las Especies.png" alt="El Origen de las Especies">
-                            <div class="book-info-index">
-                                <h2>Título: El Origen de las Especies</h2>
-                                <h3>Autor: Charles Darwin</h3>
-                                <h3>Año: 1859</h3>
-                                <h3>Género: Biología evolutiva</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="book-card-index">
-                            <img src="./img/Design Patterns.jpg" alt="Design Patterns">
-                            <div class="book-info-index">
-                                <h2>Título: Design Patterns</h2>
-                                <h3>Autor: Erich Gamma, John Vlissides, Ralph Johnson, Richard Helm</h3>
-                                <h3>Año: 1994</h3>
-                                <h3>Género: Programación</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="book-card-index">
-                            <img src="./img/Hamlet.jpg" alt="Harry Potter and the Philosopher's Stone">
-                            <div class="book-info-index">
-                                <h2>Título: Hamlet</h2> 
-                                <h3>Autor: William Shakespeare</h3>
-                                <h3>Año: 1602</h3>
-                                <h3>Género: Tragedia / Drama</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>     
-            </section>
-            <section class="guide-section">
-                <div class="guide">
-                    <div class="element">
-                        <h2>Biblioteca de Alexandria</h2>
-                        <iframe width="500" height="350" src="https://www.youtube.com/embed/Qu2wraN0nik" title="YouTube video player" 
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-                    </div>
-                    <div class="element">
-                        <h2>Bibliotecas en Buenos Aires</h2>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3235592244405!2d-58.39641718425731!3d-34.59597886459674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabdfc191295%3A0x8110084c679e64c0!2sEl%20Ateneo%20Grand%20Splendid!5e0!3m2!1ses!2sar!4v1669942025031!5m2!1ses!2sar" 
-                        width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="element">
-                        <h2>Historia del libro</h2>
-                        <iframe width="500" height="350" src="https://www.youtube.com/embed/DwWLKkW6KOE" 
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer"> 
-            <div class="social-media-container">
-                <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="Facebook icon"></a>
-                <a href="https://twitter.com" target="_blank"><img src="./img/twitter.png" alt="Twitter icon"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="Instagram icon"></a>
-                <a href="https://www.whatsapp.com/" target="_blank"><img src="./img/whatsapp.png" alt="Whatsapp icon"></a>
-                <a href="https://www.tiktok.com/" target="_blank"><img src="./img/tiktok.png" alt="Tik Tok icon"></a>
+            <img src="./img/book-club-2.jpg" alt="Book club">
+            <h2>Poema del día</h2>
+            <div class="intro-text">
+                <h2>
+                    Qué sería de mí sin vosotros,
+                    tiranos y, a la vez, embajadores,
+                    de la imaginación,
+                    verdugos del deseo
+                    y, al mismo tiempo, mensajeros suyos,
+                    libros llenos de cosas deplorables
+                    y de cosas sublimes,
+                    a los que odiar
+                    o por los que morir.
+                </h2>
+                <h2>Luis Alberto de Cuenca</h2>
             </div>
-            <div class="information-container">
+            <div class="multimedia">
+                <div class="media-element">
+                    <h2>Bibliotecas en Buenos Aires</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3235592244405!2d-58.39641718425731!3d-34.59597886459674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabdfc191295%3A0x8110084c679e64c0!2sEl%20Ateneo%20Grand%20Splendid!5e0!3m2!1ses!2sar!4v1669942025031!5m2!1ses!2sar" 
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="media-element">
+                    <h2>Historia del libro</h2>
+                    <iframe src="https://www.youtube.com/embed/DwWLKkW6KOE" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </main>
+        <aside class="aside">
+            <h1>Novedades del día</h1>
+            <div class="news">
+                <div class="new-book">
+                    <img src="./img/books/Our Crooked Hearts.jpg" alt="Our Crooked Hearts">
+                    <h3>Our Crooked Hearts</h3>
+                </div>
+                <div class="new-book">
+                    <img src="./img/books/Queen of the Tiles.jpg" alt="Queen of the Tiles">
+                    <h3>Queen of the Tiles</h3>
+                </div>
+                <div class="new-book">
+                    <img src="./img/books/The Trayvon Generation.jpg" alt="The Trayvon Generation">
+                    <h3>The Trayvon Generation</h3>
+                </div>
+            </div>
+        </aside>
+        <footer class="footer">
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img src="./img/social-media/facebook.png" alt="Facebook icon"></a>
+                <a href="https://twitter.com" target="_blank"><img src="./img/social-media/twitter.png" alt="Twitter icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/social-media/instagram.png" alt="Instagram icon"></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="./img/social-media/whatsapp.png" alt="Whatsapp icon"></a>
+                <a href="https://www.tiktok.com/" target="_blank"><img src="./img/social-media/tiktok.png" alt="Tik Tok icon"></a>
+            </div>
+            <div class="site-information">
                 <a href="">Trabajá con nosotros</a>
                 <a href="">Términos y condiciones</a>
                 <a href="">Accesibilidad</a>

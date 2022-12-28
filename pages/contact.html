@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Contacto</title>
-    <link rel="icon" type="image/x-icon" href="../img/favicon-32x32.png">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Contacto</title>
+        <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Corinthia:wght@700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet"> 
+    </head>
 <body>
-    <header> 
-        <nav> 
-            <div class="upper-bar">
-                <img src="../img/original.png" alt="Bookero logo">
+    <div class="grid-container-contact">
+    <nav class="nav">
+        <div class="upper-nav">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Bookero logo">
                 <h1>Alexandria</h1>
-                <div class="search-bar">
-                    <input type="text" placeholder="Ingresar título, autor o género..." class="search-input">
-                    <button class="search-button">Buscar</button>
-                </div>
-                <ul class="links-bar">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/books.html">Libros</a></li>
-                    <li><a href="../pages/book-of-the-day.html">Libro del día</a></li>
-                    <li><a href="../pages/contact.html">Contacto</a></li>
-                    <li><a href="../pages/user.html">Usuario</a></li>
-                </ul>
             </div>
-            
-        </nav>
-    </header>
+            <ul class="links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/books.html">Libros</a></li>
+                <li><a href="../pages/book-of-the-day.html">Libro del día</a></li>
+                <li><a href="../pages/contact.html">Contacto</a></li>
+                <li><a href="../pages/user.html">Usuario</a></li>
+            </ul>
+        </div>
+        <div class="lower-nav">
+            <input type="text" placeholder="Ingresar título, autor o género..." class="search-input">
+            <button class="search-button">Buscar</button>
+        </div>
+    </nav>
     <main>
-        <section class="banner-books">
-            <div class="welcome">
-                <h2>Comparte tus comentarios o consultas con nosotros</h2>
-            </div>
-        </section>
-        <section class="contact-panel">
-            <form action="" method="" enctype="" class="form-contact">
-                <div>
+        <section class="form-section">
+            <form action="" method="" enctype="" class="contact-form">
+                <div class="form-data">
                     <h3><label for="nombre">Nombre: </label></h3>
                     <input type="text" id="nombre" size="30px">
                 </div>
-                <div>
+                <div class="form-data">
                     <h3><label for="apellido">Apellido: </label></h3>
                     <input type="text" id="apellido" size="30px">
                 </div>
-                <div>
+                <div class="form-data">
                     <h3><label for="correo">Correo: </label></h3>
                     <input type="email" id="correo" size="30px">
                 </div>
-                <div>
+                <div class="form-data">
                     <h3><label for="contrasena">Contraseña: </label></h3>
                     <input type="password" id="contrasena" size="30px">
                 </div>
-                <div>
+                <div class="form-data">
                     <h3>Genero: </h3>
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" name="genero">
-                    <label for="femenino">Femenino</label>
-                    <input type="radio" name="genero">
-                    <label for="otro">Otro</label>
-                    <input type="radio" name="genero">
+                    <div>
+                        <label for="masculino" class="genre">Masculino</label>
+                        <input type="radio" name="genero">
+                    </div>
+                    <div>
+                        <label for="femenino" class="genre">Femenino</label>
+                        <input type="radio" name="genero">
+                    </div>
+                    <div>
+                        <label for="otro" class="genre">Otro</label>
+                        <input type="radio" name="genero">
+                    </div>
                 </div>
-                <div>
-                    <h3><label for="select">Pais</label></h3>
-                    <select name="select" id="">
+                <div class="form-data form-data-country">
+                    <h3><label for="select">Pais:</label></h3>
+                    <select name="select" id="" class="countries">
                         <option value="">Argentina</option>
                         <option value="">Bolivia</option>
                         <option value="">Brasil</option>
@@ -77,32 +85,37 @@
                         <option value="">Venezuela</option>
                     </select>
                 </div>
-                <div>
-                    <h3>Comentario</h3>
-                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                <div class="form-data">
+                    <h3>Comentario:</h3>
+                    <textarea name="" id="" cols="40" rows="7"></textarea>
                 </div>
                 <div class="buttons">
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Cancelar">
                 </div>
             </form>
-            <img src="../img/contact.png" alt="Contact">
         </section>
+        
     </main>
-    <footer class="footer"> 
-        <div class="social-media-container">
-            <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Facebook icon"></a>
-            <a href="https://twitter.com" target="_blank"><img src="../img/twitter.png" alt="Twitter icon"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Instagram icon"></a>
-            <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt="Whatsapp icon"></a>
-            <a href="https://www.tiktok.com/" target="_blank"><img src="../img/tiktok.png" alt="Tik Tok icon"></a>
+    <section class="image-section">
+        <h2>Compartí tus comentarios o consultas con nosotros</h2>
+        <img src="../img/book-club.jpg" alt="Contact" class="contact-image">
+    </section>
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target="_blank"><img src="../img/social-media/facebook.png" alt="Facebook icon"></a>
+            <a href="https://twitter.com" target="_blank"><img src="../img/social-media/twitter.png" alt="Twitter icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../img/social-media/instagram.png" alt="Instagram icon"></a>
+            <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/social-media/whatsapp.png" alt="Whatsapp icon"></a>
+            <a href="https://www.tiktok.com/" target="_blank"><img src="../img/social-media/tiktok.png" alt="Tik Tok icon"></a>
         </div>
-        <div class="information-container">
+        <div class="site-information">
             <a href="">Trabajá con nosotros</a>
             <a href="">Términos y condiciones</a>
             <a href="">Accesibilidad</a>
             <a href="">Ayuda</a>
         </div>
     </footer>
+    </div>
 </body>
 </html>
