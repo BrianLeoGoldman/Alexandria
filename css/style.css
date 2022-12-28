@@ -125,6 +125,13 @@
 .header img {
     width: 150px;
     height: 150px;
+    transition-property: -webkit-transform;
+    transition-duration: 1s;
+}
+
+.header img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 .welcome {
@@ -136,6 +143,12 @@
     font-family: 'Cinzel', serif;
     font-weight: 900;
     color: black;
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+.welcome h1:hover {
+    color: #ebe11f;
 }
 
 .welcome h2 {
@@ -698,6 +711,20 @@
     margin: 5px;
 }
 
+@media screen and (max-width:720px) {
+    .grid-container-books {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 100px auto 80px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .grid-container-books {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 180px auto 80px;
+    }
+}
+
 /*-------------- BOOK OF THE DAY --------------*/
 
 .grid-container-book-of-the-day {
@@ -849,6 +876,218 @@
     width: 100px;
     height: 30px;
     font-size: 1.2rem;
+}
+
+@media screen and (max-width:1260px) {
+    .main-cover img {
+        height: 400px;
+        width: 325px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .grid-container-book-of-the-day {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 80px auto auto auto 80px;
+        grid-template-areas: 
+        "nav nav nav"
+        "main main main"
+        "aside aside aside"
+        "chat chat chat"
+        "footer footer footer";
+    }
+
+    .book-of-the-day-covers {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .secondary-covers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intervention p {
+        font-family: 'Linden Hill', serif;
+        font-size: 1.2rem;
+    }
+
+    .chat h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .add-discussion input {
+        width: 550px;
+        height: 30px;
+    }
+    
+    .add-discussion button {
+        width: 80px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .long-review h3 {
+        margin-top: 20px;
+        font-size: 1.1rem;
+    }
+    
+    .long-review p {
+        font-size: 0.9rem;
+    }
+
+    .column h3 {
+        margin-right: 20px;
+        margin-top: 10px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .grid-container-book-of-the-day {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px auto auto auto 80px;
+    }
+
+    .book-of-the-day-info h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 2.7rem;
+    }
+
+    .add-discussion input {
+        width: 350px;
+        height: 30px;
+    }
+    
+    .add-discussion button {
+        width: 70px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width:630px) {
+    
+    .main-cover img {
+        height: 300px;
+        width: 225px;
+        margin: 15px;
+    }
+
+    .secondary-covers img {
+        height: 150;
+        width: 50px;
+        margin: 15px;
+    }
+    
+}
+
+@media screen and (max-width:530px) {
+    .grid-container-book-of-the-day {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 180px auto auto auto 80px;
+    }
+
+    .book-of-the-day-info h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 2rem;
+    }
+
+    .long-review h3 {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    
+    .long-review p {
+        font-size: 0.8rem;
+    }
+
+    .column h3 {
+        margin-right: 20px;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .add-discussion input {
+        width: 250px;
+        height: 30px;
+    }
+    
+    .add-discussion button {
+        width: 60px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+
+    .intervention p {
+        font-size: 1rem;
+    }
+
+    .intervention img {
+        display: none;
+    }
+
+    .chat h3 {
+        font-size: 1.1rem;
+    }
+
+    .column h3 {
+        margin-right: 20px;
+        margin-top: 7px;
+        font-size: 0.8rem;
+    }
+
+    .book-of-the-day-info h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:390px) {
+
+    .add-discussion {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .add-discussion button {
+        margin-top: 10px;
+    }
+
+    .secondary-covers img {
+       display: none;
+    }
+
+    .intervention p {
+        font-size: 0.9rem;
+    }
+
+    .chat h3 {
+        font-size: 1rem;
+    }
+
+    .column h3 {
+        margin-right: 15px;
+        margin-top: 5px;
+        font-size: 0.7rem;
+    }
+
+    .book-of-the-day-info h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+    }
 }
 
 /*------------------ CONTACT ------------------*/
