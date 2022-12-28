@@ -5,335 +5,565 @@
     box-sizing: border-box
 }
 
+/* Font imports */
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Corinthia:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal&display=swap');
 
-.grid-container {
+/*------------------ INDEX ------------------*/
+
+.grid-container-index {
+    margin: 0 auto;
+    color: black;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px auto 100px;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
+    grid-template-rows: 80px 150px auto 80px;
     grid-template-areas: 
+    "nav nav nav"
     "header header header"
-    "main main main"
+    "main main aside"
     "footer footer footer";
 }
 
-/*------------------ HEADER ------------------*/
+/* Nav */
 
-header {
-    grid-area: header;
-}
-
-nav {
-    background-color: black;
-    height: fit-content;
-    width: 100%;
-    position: fixed; 
-    top: 0; 
-}
-
-.upper-bar {
+.nav {
+    background-color: #e4d5b7;
+    grid-area: nav;
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.upper-bar h1 {
-    color: crimson;
-    font-size: 25px;
+.upper-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo img {
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.logo h1 {
+    margin-left: 10px;
+    font-size: 21.5remem;
     font-style: normal;
     font-family: 'Cinzel', serif;
-    font-weight: 300;
-    margin: 20px;
+    color: black;
 }
 
-.upper-bar img {
-    margin: 10px;
-    height: 50px;
-    width: 50px;
-}
-
-.search-bar {
+.links {
     display: flex;
-    justify-content: start;
-    margin-top: 25px;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.links li {
+    margin-left: 25px;
+}
+
+.links li a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+.links li a:hover {
+    color: darkgoldenrod;
+}
+
+.lower-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-input {
     height: 25px;
-    width: 400px;
-    display: inline-block;
-    position: relative; 
+    width: 500px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .search-button {
     height: 25px;
     width: 75px;
-    display: inline-block;
-    position: relative; 
-    margin-left: 20px;
 }
 
-.links-bar {
-    display: flex;
-    justify-content: end;
-    flex-wrap: wrap;
-    list-style: none;
-}
+/* Header */
 
-.links-bar li {
-    display: inline-block;
-    margin: 25px;
-}
-
-.links-bar li a {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-/*------------------ MAIN ------------------*/
-
-/* Index.html */
-
-main {
-    grid-area: main;
-}
-
-.banner-index {
+.header {
+    background-color: #d9b99b;
+    grid-area: header;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    height: 30vh;
-    background-color: #f3f6f4;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
-.banner-index img {
-    width: 250px;
-    height: 250px;
-}
-
-.welcome-index {
-    text-align: center;
-}
-
-.welcome-index h1 {
-    font-size: 6rem;
-    font-family: 'Cinzel', serif;
-    font-weight: 900;
-    color: crimson;
-    padding: 15px;
-    margin-top: 25px;
-}
-
-.welcome-index h2 {
-    font-size: 2rem;
-    font-family: 'Cinzel', serif;
-    color: crimson;
-    margin-top: 5px;
-    width: 700px;
-}
-
-.showroom {
-    background-color: #f3f6ff;
-}
-
-.showroom img {
-    height: 350px;
-    width: 275px;
-    margin: 5px;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-}
-
-.book-card-index {
-    display: flex;
-    flex-direction: row;
-    margin: 30px;
-    border: 3px solid black;
-    background-color: beige;
-}
-
-.book-info-index h2 {
-    margin: 5px;
-}
-
-.book-info-index h3 {
-    margin: 5px;
-    margin-top: 20px;
-}
-
-.guide-section {
-    background-color:  #f3f6ff;
-}
-
-.guide {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.guide h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    color: black;
-    margin-top: 30px;
-    width: 600px;
-}
-
-.guide .element {
-        display: flex;
-flex-direction: column;
-}
-
-.guide iframe {
-    margin: 25px;
-}
-
-/* Books.html */
-
-.banner-books {
-    
-    width: 100%;
-    height: 7vh;
-    background-image: url(../img/beige.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: 70px;
+.header img {
+    width: 150px;
+    height: 150px;
 }
 
 .welcome {
     text-align: center;
 }
 
-.welcome h2 {
-    font-size: 30px;
-    font-family: fantasy;
-    color: darkgreen;
-    padding: 15px;
-    margin-top: 25px;
+.welcome h1 {
+    font-size: 5rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    color: black;
 }
 
-.gallery {
-    background-image: url("../img/background.png");
+.welcome h2 {
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+    color: black;
+    ;
+}
+
+/* Main */
+
+.main {
+    background-color: #eed9c4;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main img {
+    margin: 20px;
+    width: 700px;
+    height: 400px;
+    transition-property: box-shadow;
+    transition-duration: 1.5s;
+}
+
+.main img:hover {
+    box-shadow: 5px 5px darkslategray;
+}
+
+.main h2 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+.intro-text {
+    background-image: url("../img/cuaderno.jpg");
+    border-radius: 25px;
+    margin: 20px;
+    padding: 20px;
+    width: 100vh;
+    text-align: center;
+    transition-property: box-shadow;
+    transition-duration: 1.5s;
+}
+
+.intro-text:hover {
+    box-shadow: 5px 5px darkslategray;
+}
+
+.intro-text h2 {
+    font-family: 'Corinthia', serif;
+    font-size: 2rem;
+    color: black;
+}
+
+.multimedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.media-element {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.media-element iframe {
+    margin: 15px;
+    width: 350px;
+    height: 250px;
+}
+
+.media-element h2 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+/* Aside */
+
+.aside {
+    background-color: #faf0e6;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.aside h1 {
+    margin: 10px;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+.new-book {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.new-book img {
+    width: 150px;
+    height: 200px;
+}
+
+.new-book h2 {
+    width: min-content;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #fff0db;
+    grid-area: footer;
+}
+
+.social-media {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media img {
+    height: 40px;
+    width: 40px;
+}
+
+.social-media a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.site-information {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+
+.site-information a {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1000px) {
+
+    .header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .welcome h1 {
+        font-size: 3rem;
+    }
+    
+    .welcome h2 {
+        font-size: 1rem;
+    }
+
+    .main img {
+        margin: 20px;
+        width: 500px;
+        height: 200px;
+    }
+
+    .multimedia {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .new-book img {
+        width: 100px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:750px) {
+
+}
+
+
+/*------------------ BOOKS ------------------*/
+
+.grid-container-books {
+    margin: 0 auto;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 80px auto 80px;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+}
+
+.grid-container-books-sections {
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 450px 450px 450px 450px;
+    grid-template-areas: 
+    "news"
+    "recommended"
+    "genres"
+    "authors"
+}
+
+.section {
+    text-align: center;
+    background-color: #fff0db;
+    height: 100%;
+}
+
+.section h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    color: black;
+    margin-top: 10px;
+}
+
+.books-header {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.letters {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.letters li {
+    margin-left: 25px;
+}
+
+.letters li a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.letters li a:hover {
+    color: darkorange;
+}
+
+
+.books-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    border-radius: 25px;
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+    background-color: #d9b99b;
+    align-items: center;
+    box-shadow: 10px 10px cadetblue;
+    transition-property: background-color;
+    transition-duration: 1.5s;
+}
+
+.card:hover {
+    background-color: khaki
+}
+
+.card img {
+    border-radius: 20px;
+    width: 170px;
+    height: 210px;
+    margin: 5px;
+}
+
+.card-body {
+    text-align: start;
+}
+
+.card-body h5 {
+    font-size: 1.1rem;
+    color: black;
+    margin-top: 7px;
+    margin-left: 10px;
+    font-family: 'Linden Hill', serif;
+    font-weight: 600;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: black;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: 'Linden Hill', serif;
+    font-weight: 400;
+}
+
+.card-body img {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+/*-------------- BOOK OF THE DAY --------------*/
+
+.grid-container-book-of-the-day {
+    margin: 0 auto;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px auto auto 80px;
+    grid-template-areas: 
+    "nav nav nav"
+    "aside main main"
+    "chat chat chat"
+    "footer footer footer";
+}
+
+.book-of-the-day-info {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.gallery img {
-    height: 400px;
-    width: 325px;
-    margin: 10px;
+.book-of-the-day-info h2 {
+    font-family: 'Linden Hill', serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 3.5rem;
 }
 
-.book-card {
+.information {
     display: flex;
     flex-direction: row;
-    margin: 30px;
-    border: 5px solid black;
-    background-image: url("../img/cuaderno.jpg");
-    background-attachment: scroll;
+    justify-content: center;
+    align-items: flex-start;
+    height: 40%;
 }
 
-.book-info {
-    width: 30vh;
-    margin: 15px;
-    margin-left: 25px;
+.column {
+    width: 50%;
 }
 
-.book-info h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 15px;
-    color: black;
-    margin-right: 5px;
+.column h3 {
+    margin-top: 5px;
+    font-family: 'Metal', cursive;
+    font-size: 1.3rem;
 }
 
-.book-info h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    margin: 15px;
-    margin-right: 5px;
+.long-review {
+    height: 60%;
+    font-family: 'Linden Hill', serif;
 }
 
-.short-review {
-    width: 70vh;
-    margin: 15px;
+.long-review h3 {
+    font-family: 'Linden Hill', serif;
+    margin-top: 10px;
+    font-size: 1.3rem;
 }
 
-.short-review h3 {
-    margin: 15px;
-    color: black;
-}
-
-.short-review p {
-    font-family: 'Times New Roman', Times, serif;
+.long-review p {
+    font-family: 'Linden Hill', serif;
+    margin-top: 10px;
     font-size: 1.2rem;
-    margin: 15px;
     text-align: justify;
-    color: black;
 }
 
-.book-comments {
-    width: 40vh;
-    margin: 15px;
-}
-
-.book-comments h3 {
-    margin: 15px;
-    margin-left: 25px;
-    color: black;
-}
-
-.book-comments ul li {
-    list-style: decimal;
-    font-size: 1.2rem;
-    margin: 15px;
-    margin-left: 25px;
-    color: black;
-}
-
-/* Book-of-the-day.html */
-
-.book-of-the-day {
+.book-of-the-day-covers {
     display: flex;
-    flex-direction: row;
-    margin: 50px;
-    background-image: url("../img/background.png");
-    background-attachment: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
 }
 
 .main-cover img {
     border: solid 3px black;
-    height: 600px;
-    width: 525px;
+    height: 500px;
+    width: 425px;
     margin: 10px;
 }
 
 .secondary-covers {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .secondary-covers img {
@@ -343,232 +573,257 @@ flex-direction: column;
     margin: 10px;
 }
 
-.information h2 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 30px;
-    color: black;
-}
-
-.information h3 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 30px;
-    color: black;
-}
-
-.long-review h3{
-    margin: 30px;
-    color: black;
-}
-
-.long-review p {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.2rem;
-    margin: 30px;
-    text-align: justify;
-    color: black;
-    width: 700px;
-}
-
-.user-panel {
+.chat-and-comments {
+    grid-area: chat;
+    background-color: #d9b99b;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-image: url("../img/background.png");
-    background-attachment: fixed;
-    margin: 50px;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.long-comments {
-    margin: 75px;
-    border: 5px solid #555;
-    padding: 15px;
-}
-
-.long-comments h3 {
-    font-weight: 900;
+.chat {
     margin: 15px;
-    margin-left: 25px;
-    color: black;
 }
 
-.long-comments ul {
-    list-style: square;
-}
-
-.long-comments ul li {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.3rem;
-    margin: 15px;
-    margin-left: 25px;
-    color: black;
-}
-
-.add-comment input {
-    margin-left: 25px;
-    width: 400px;
-}
-
-
-.add-comment button {
-    width: 100px;
-    height: 20px;
-}
-
-.discussion {
-    margin: 75px;
-    border: 5px solid #555;
-    padding: 15px;
-}
-
-.discussion h3 {
-    font-weight: 900;
-    margin-left: 25px;
+.chat h3 {
+    font-family: 'Linden Hill', serif;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 1.5rem;
 }
 
 .intervention {
+    margin-left: 30px;
     display: flex;
     flex-direction: row;
-    margin-left: 25px;
-}
-
-.intervention img {
-    height: 25px;
-    width: 25px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.intervention h3 {
-    margin: 15px;
-    margin-left: 25px;
-    color: black;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .intervention p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.3rem;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: black;
+    font-family: 'Linden Hill', serif;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.intervention img {
+    width: 30px;
+    height: 30px;
+}
+
+.add-discussion {
+    margin-top: 10px;
+    margin-left: 30px;
 }
 
 .add-discussion input {
-    width: 400px;
-    margin-left: 25px;
+    width: 750px;
+    height: 30px;
 }
-
 
 .add-discussion button {
     width: 100px;
-    height: 20px;
+    height: 30px;
+    font-size: 1.2rem;
 }
 
-/* Contact.html */
+/*------------------ CONTACT ------------------*/
 
-.contact-panel {
+.grid-container-contact {
+    margin: 0 auto;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px auto 80px;
+    grid-template-areas: 
+    "nav nav"
+    "form picture"
+    "footer footer";
+}
+
+.form-section {
+    grid-area: form;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    background-image: url("../img/background.png");
+    align-items: center;
+    background-color: #eed9c4;
 }
 
-.contact-panel form {
+.form-section form {
     margin: 30px;
 }
 
-.form-contact {
+.contact-form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.form-contact div {
-    margin-bottom: 30px;
+.contact-form div {
+    margin: 30px;
 }
 
-.contact-panel img {
-    height: 450px;
-    width: 600px;
-    margin: 30px;
+.form-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-data h3 {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+.form-data-country {
+    justify-content: flex-start;
+}
+
+.genre {
+    font-size: 1rem;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+.countries {
+    font-size: 1rem;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .buttons input {
     height: 50px;
     width: 130px;
-    font-size: 20px;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
 }
 
-/* User.html */
+.image-section {
+    grid-area: picture;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf0e6;
+    text-align: center;
+}
+
+.image-section h2 {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.contact-image {
+    height: 450px;
+    width: 600px;
+    margin: 30px;
+}
+
+/*------------------- USER -------------------*/
+
+.grid-container-user {
+    margin: 0 auto;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px auto 80px;
+    grid-template-areas: 
+    "nav nav"
+    "user user"
+    "footer footer";
+}
+
+.user-main {
+    grid-area: user;
+    width: 100%;
+    background-color: #faf0e6;
+}
+
+.user-name {
+    width: 100%;
+    background-color: #faf0e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin: 15px;
+}
+
+.user-photo {
+    height: 250px;
+    width: 400px;
+    margin: 30px;
+}
+
+.user-photo img {
+    height: 250px;
+    width: 400px;
+    margin: 30px;
+    box-shadow: 5px 5px goldenrod;
+    border-radius: 20px;
+}
 
 .user-data {
     display: flex;
     flex-direction: row;
-    background-image: url("../img/background.png");
+    justify-content: center;
+    align-items: center;
 }
 
-.user-info {
+.column h2 {
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.7rem;
+    margin: 40px
+}
+
+.user-pictures {
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.user-info h2 {
-    margin-bottom: 10px
-}
-.user-data img {
-    height: 400px;
-    width: 600px;
-    margin-left: 70px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border: 5px solid #555;
-}
-
-
-
-/*------------------ FOOTER ------------------*/
-
-.footer {
-    grid-area: footer;
-    width: 100%;
-    background-image: url("../img/beige.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.social-media-container {
-    display: flex; 
-    flex-direction: row; 
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
 }
 
-.social-media-container img {
-    height: 40px;
-    width: 40px;
+.user-pictures h2 {
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    margin: 40px
 }
 
-.social-media-container a {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 45px;
-    margin-right: 45px;
-}
-
-.information-container {
-    display: flex; 
-    flex-direction: row; 
+.user-books {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
 }
 
-.information-container a {
-    margin: 5px;
-    margin-left: 10px;
-    font-size: 1.2rem;
+.user-books img {
+    border-radius: 20px;
+    width: 170px;
+    height: 210px;
+    margin: 10px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px cadetblue;
 }
+

@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Usuario</title>
-    <link rel="icon" type="image/x-icon" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Corinthia:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header> 
-        <nav> 
-            <div class="upper-bar">
-                <img src="../img/original.png" alt="Bookero logo">
-                <h1>Alexandria</h1>
-                <div class="search-bar">
-                    <input type="text" placeholder="Ingresar título, autor o género..." class="search-input">
-                    <button class="search-button">Buscar</button>
+    <div class="grid-container-user">
+        <nav class="nav">
+            <div class="upper-nav">
+                <div class="logo">
+                    <img src="../img/logo.png" alt="Bookero logo">
+                    <h1>Alexandria</h1>
                 </div>
-                <ul class="links-bar">
+                <ul class="links">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="../pages/books.html">Libros</a></li>
                     <li><a href="../pages/book-of-the-day.html">Libro del día</a></li>
@@ -26,51 +30,65 @@
                     <li><a href="../pages/user.html">Usuario</a></li>
                 </ul>
             </div>
-            
+            <div class="lower-nav">
+                <input type="text" placeholder="Ingresar título, autor o género..." class="search-input">
+                <button class="search-button">Buscar</button>
+            </div>
         </nav>
-    </header>
-    <main>
-        <section class="banner-books">
-            <div class="welcome">
-                <h2>Perfil de usuario</h2>
+        <main class="user-main">
+            <section class="user-name">
+                <h2>Juan Sebastian Ramonetti</h2>
+                <div class="user-photo">
+                    <img src="../img/user.png" alt="User photo">
+                </div>
+            </section>
+            <section class="user-data">
+                <div class="column">
+                    <h2>Nombres: Juan Sebastian</h2>
+                    <h2>Apellido: Ramonetti</h2>
+                    <h2>Nacimiento: 03/05/1987</h2>
+                    <h2>Usuario desde: 21/11/2021</h2>
+                    <h2>Pais: Uruguay</h2>
+                    <h2>Genero: Masculino</h2>
+                    <h2>Ocupacion: comerciante</h2>
+                </div>
+                <div class="column">
+                    <h2>Libro favorito: Lessons (Ian MacEwan)</h2>
+                    <h2>Ultimo libro leido: The Trees (Percival Everett)</h2>
+                    <h2>Genero favorito: terror</h2>
+                    <h2>Publicaciones: 2</h2>
+                    <h2>Comentarios: 4</h2>
+                    <h2>Discusiones: 7</h2>
+                </div>
+            </section>
+            <section class="user-pictures">
+                <h2>Mis libros</h2>
+                <div class="user-books">
+                    <img src="../img/books/Bodies of Light.jpg" alt="User photo">
+                    <img src="../img/books/Vagabond Vol 10.jpg" alt="User photo">
+                    <img src="../img/books/Design Patterns.jpg" alt="User photo">
+                    <img src="../img/books/The Light We Carry.jpg" alt="User photo">
+                    <img src="../img/books/Dialectica del Iluminismo.jpg" alt="User photo">
+                    <img src="../img/books/Hamlet.jpg" alt="User photo">
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../img/social-media/facebook.png" alt="Facebook icon"></a>
+                <a href="https://twitter.com" target="_blank"><img src="../img/social-media/twitter.png" alt="Twitter icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/social-media/instagram.png" alt="Instagram icon"></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/social-media/whatsapp.png" alt="Whatsapp icon"></a>
+                <a href="https://www.tiktok.com/" target="_blank"><img src="../img/social-media/tiktok.png" alt="Tik Tok icon"></a>
             </div>
-        </section>
-        <section class="user-data">
-            <div class="user-info">
-                <h2>Nombres: Juan Sebastian</h2>
-                <h2>Apellido: Ramonetti</h2>
-                <h2>Nacimiento: 03/05/1987</h2>
-                <h2>Usuario desde: 21/11/2021</h2>
-                <h2>Pais: Uruguay</h2>
-                <h2>Genero: Masculino</h2>
-                <h2>Ocupacion: comerciante</h2>
+            <div class="site-information">
+                <a href="">Trabajá con nosotros</a>
+                <a href="">Términos y condiciones</a>
+                <a href="">Accesibilidad</a>
+                <a href="">Ayuda</a>
             </div>
-            <div class="user-info">
-                <h2>Libro favorito: Lessons (Ian MacEwan)</h2>
-                <h2>Genero favorito: terror</h2>
-                <h2>Publicaciones: 2</h2>
-                <h2>Comentarios: 4</h2>
-                <h2>Discusiones: 7</h2>
-            </div>
-            <div class="user-photo">
-                <img src="../img/user.png" alt="User photo">
-            </div>
-        </section>
-    </main>
-    <footer class="footer"> 
-        <div class="social-media-container">
-            <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Facebook icon"></a>
-            <a href="https://twitter.com" target="_blank"><img src="../img/twitter.png" alt="Twitter icon"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Instagram icon"></a>
-            <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt="Whatsapp icon"></a>
-            <a href="https://www.tiktok.com/" target="_blank"><img src="../img/tiktok.png" alt="Tik Tok icon"></a>
+        </footer>
         </div>
-        <div class="information-container">
-            <a href="">Trabajá con nosotros</a>
-            <a href="">Términos y condiciones</a>
-            <a href="">Accesibilidad</a>
-            <a href="">Ayuda</a>
-        </div>
-    </footer>
 </body>
 </html>
