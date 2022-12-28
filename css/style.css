@@ -246,6 +246,13 @@
     color: black;
 }
 
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .new-book {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -302,9 +309,10 @@
     margin-left: 10px;
     font-size: 1rem;
     text-decoration: none;
+    text-align: center;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1050px) {
 
     .header img {
         width: 100px;
@@ -322,7 +330,7 @@
     .main img {
         margin: 20px;
         width: 500px;
-        height: 200px;
+        height: 300px;
     }
 
     .multimedia {
@@ -336,9 +344,223 @@
         width: 100px;
         height: 150px;
     }
+
+    .intro-text {
+        margin: 20px;
+        padding: 20px;
+        width: 70vh;
+    }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:810px) {
+
+    .grid-container-index {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 150px auto auto 80px;
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main main "
+        "aside aside "
+        "footer footer";
+    }
+
+    .aside {
+        grid-area: aside;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .new-book {
+        margin-right: 50px;
+    }
+
+    .new-book h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    .grid-container-index {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 150px auto auto 80px;
+    }
+
+    .upper-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .main img {
+        margin: 20px;
+        width: 300px;
+        height: 200px;
+    }
+
+    .intro-text {
+        margin: 20px;
+        padding: 20px;
+        width: 50vh;
+    }
+
+    .intro-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .search-input {
+        height: 25px;
+        width: 300px;
+    }
+
+    
+}
+
+@media screen and (max-width:530px) {
+
+    .grid-container-index {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 180px 150px auto auto 80px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .welcome h1 {
+        font-size: 1.5rem;
+    }
+    
+    .welcome h2 {
+        font-size: 1rem;
+    }
+
+    .social-media img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .site-information a {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 0.8rem;
+    }
+
+    .new-book {
+        margin-right: 40px;
+    }
+
+    .new-book img {
+        width: 80px;
+        height: 130px;
+    }
+
+    .new-book h3 {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .intro-text {
+        margin: 20px;
+        padding: 20px;
+        width: 40vh;
+    }
+
+    .intro-text h2 {
+        font-size: 1rem;
+    }
+
+    .search-input {
+        height: 25px;
+        width: 200px;
+    }
+    
+    .search-button {
+        height: 25px;
+        width: 50px;
+    }
+
+    .main h2 {
+        font-size: 1.1rem;
+    }
+
+    .media-element h2 {
+        font-size: 1.1rem;
+    }
+
+    .aside h1 {
+        font-size: 1.1rem;
+    }
+
+    .media-element iframe {
+        margin: 15px;
+        width: 250px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .intro-text {
+        margin: 20px;
+        padding: 20px;
+        width: 30vh;
+    }
+
+    .new-book {
+        margin-right: 30px;
+    }
+
+    .new-book img {
+        width: 60px;
+        height: 110px;
+    }
+
+    .new-book h3 {
+        font-size: 0.7rem;
+    }
+
+    .social-media a {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .welcome h1 {
+        font-size: 1.3rem;
+    }
+    
+    .welcome h2 {
+        font-size: 0.9rem;
+    }
+
+    .main img {
+        margin: 20px;
+        width: 250px;
+        height: 150px;
+    }
 
 }
 
