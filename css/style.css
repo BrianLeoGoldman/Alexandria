@@ -1096,16 +1096,26 @@
     margin: 0 auto;
     color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 80px auto 80px;
     grid-template-areas: 
-    "nav nav"
-    "form picture"
-    "footer footer";
+    "nav"
+    "info"
+    "footer";
+}
+
+.contact-panel {
+    grid-area: info;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf0e6;
 }
 
 .form-section {
-    grid-area: form;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1142,6 +1152,11 @@
     color: black;
 }
 
+.form-data textarea {
+    width: 400px;
+    height: 100px;
+}
+
 .form-data-country {
     justify-content: flex-start;
 }
@@ -1176,7 +1191,6 @@
 }
 
 .image-section {
-    grid-area: picture;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1195,6 +1209,103 @@
     height: 450px;
     width: 600px;
     margin: 30px;
+}
+
+@media screen and (max-width:1400px) {
+    .contact-image {
+        height: 400px;
+        width: 500px;
+        margin: 25px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+
+    .form-data h3 {
+        margin-right: 10px;
+        font-size: 1.2rem;
+    }
+
+    .form-data textarea {
+        width: 300px;
+    }
+
+    .image-section h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .contact-image {
+        height: 300px;
+        width: 400px;
+        margin: 25px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .contact-panel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+
+    .image-section h2 {
+        font-size: 2rem;
+        margin-top: 25px;
+    }   
+}
+
+@media screen and (max-width:720px) {
+
+    .grid-container-contact {
+        grid-template-rows: 100px auto 80px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .image-section h2 {
+        font-size: 1.5rem;
+    }   
+
+    .contact-image {
+        height: 200px;
+        width: 300px;
+        margin: 20px;
+    }
+
+    .form-data textarea {
+        width: 200px;
+    }
+
+    .contact-form div {
+        margin: 20px;
+    }
+
+    .buttons input {
+        height: 40px;
+        width: 90px;
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:530px) {
+    .grid-container-contact {
+        grid-template-rows: 180px auto 80px;
+    }
+
+    .form-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 /*------------------- USER -------------------*/
