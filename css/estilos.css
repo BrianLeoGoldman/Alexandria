@@ -1,0 +1,99 @@
+/* Font imports and reset */
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Corinthia:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metal&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Nav */
+.nav {
+  background-color: #e4d5b7;
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .nav .upper-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .nav .upper-nav .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; }
+      .nav .upper-nav .logo img {
+        margin-left: 10px;
+        margin-top: 5px;
+        height: 40px;
+        width: 40px; }
+      .nav .upper-nav .logo h1 {
+        margin-left: 10px;
+        font-size: 21.5remem;
+        font-style: normal;
+        font-family: 'Cinzel', serif;
+        color: black; }
+    .nav .upper-nav .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      list-style: none; }
+      .nav .upper-nav .links li {
+        margin-left: 25px; }
+        .nav .upper-nav .links li a {
+          font-family: 'Courier New', Courier, monospace;
+          font-size: 1rem;
+          font-weight: 700;
+          text-decoration: none;
+          color: black;
+          transition-property: color;
+          transition-duration: 1s; }
+          .nav .upper-nav .links li a:hover {
+            color: darkgoldenrod; }
+  .nav .lower-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .nav .lower-nav .search-input {
+      height: 25px;
+      width: 500px;
+      margin-left: 20px;
+      margin-right: 20px; }
+    .nav .lower-nav .search-button {
+      height: 25px;
+      width: 75px; }
+
+/* Footer */
+.footer {
+  background-color: #fff0db;
+  grid-area: footer; }
+  .footer .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .footer .social-media a {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: 30px;
+      margin-right: 30px; }
+      .footer .social-media a img {
+        height: 40px;
+        width: 40px; }
+  .footer .site-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .footer .site-information a {
+      margin-right: 10px;
+      margin-left: 10px;
+      font-size: 1rem;
+      text-decoration: none;
+      text-align: center; }
