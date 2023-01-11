@@ -1,4 +1,4 @@
-/* Font imports and reset */
+/*------------------ FONT IMPORTS AND RESET ------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Corinthia:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
@@ -9,7 +9,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-/* Nav */
+/*------------------ NAV ------------------*/
 .nav {
   background-color: #e4d5b7;
   grid-area: nav;
@@ -69,6 +69,7 @@
       height: 25px;
       width: 75px; }
 
+/*------------------ HEADER ------------------*/
 .header {
   background-color: #d9b99b;
   grid-area: header;
@@ -100,7 +101,7 @@
       font-family: 'Cinzel', serif;
       color: black; }
 
-/* Index */
+/*------------------ INDEX ------------------*/
 .grid-container-index {
   margin: 0 auto;
   color: black;
@@ -197,6 +198,7 @@
         .grid-container-index .aside .news .new-book h3 {
           width: min-content; }
 
+/*------------------ BOOKS ------------------*/
 .grid-container-books {
   margin: 0 auto;
   color: black;
@@ -283,7 +285,7 @@
               font-family: 'Linden Hill', serif;
               font-weight: 400; }
 
-/* Book of the day */
+/*------------------ BOOK OF THE DAY ------------------*/
 .grid-container-book-of-the-day {
   margin: 0 auto;
   color: black;
@@ -388,6 +390,7 @@
           height: 30px;
           font-size: 1.2rem; }
 
+/*------------------ CONTACT ------------------*/
 .grid-container-contact {
   margin: 0 auto;
   color: black;
@@ -469,6 +472,7 @@
         width: 600px;
         margin: 30px; }
 
+/*------------------ USER ------------------*/
 .grid-container-user {
   margin: 0 auto;
   color: black;
@@ -536,7 +540,7 @@
           margin-bottom: 50px;
           box-shadow: 5px 5px cadetblue; }
 
-/* Footer */
+/*------------------ FOOTER ------------------*/
 .footer {
   background-color: #fff0db;
   grid-area: footer; }
@@ -565,7 +569,7 @@
       text-decoration: none;
       text-align: center; }
 
-/*------------------ NAV ------------------*/
+/*------------------ NAV MEDIAQUERIES ------------------*/
 @media screen and (max-width: 720px) {
   .nav .upper-nav {
     display: flex;
@@ -592,7 +596,7 @@
     height: 25px;
     width: 50px; } }
 
-/*------------------ HEADER ------------------*/
+/*------------------ HEADER MEDIAQUERIES ------------------*/
 @media screen and (max-width: 1050px) {
   .header img {
     width: 100px;
@@ -620,20 +624,8 @@
   .header .welcome h2 {
     font-size: 0.9rem; } }
 
-/*------------------ INDEX ------------------*/
+/*------------------ INDEX MEDIAQUERIES ------------------*/
 @media screen and (max-width: 1050px) {
-  /*     .header img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .header .welcome h1 {
-        font-size: 3rem;
-    }
-    
-    .header .welcome h2 {
-        font-size: 1rem;
-    } */
   .grid-container-index .main img {
     margin: 20px;
     width: 500px;
@@ -671,13 +663,7 @@
 @media screen and (max-width: 720px) {
   .grid-container-index {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 150px auto auto 80px; }
-  /*     .nav .upper-nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    } */ }
+    grid-template-rows: 100px 150px auto auto 80px; } }
 
 @media screen and (max-width: 630px) {
   .grid-container-index .main img {
@@ -689,43 +675,12 @@
     padding: 20px;
     width: 50vh; }
   .grid-container-index .main .intro-text h2 {
-    font-size: 1.2rem; }
-  /*     .nav .lower-nav .search-input {
-        height: 25px;
-        width: 300px;
-    }   */ }
+    font-size: 1.2rem; } }
 
 @media screen and (max-width: 530px) {
   .grid-container-index {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 180px 150px auto auto 80px; }
-  /*     .nav .upper-nav .links {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    } */
-  /*     .header img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .header .welcome h1 {
-        font-size: 1.5rem;
-    }
-    
-    .header .welcome h2 {
-        font-size: 1rem;
-    } */
-  /*    .footer .social-media img {
-        height: 25px;
-        width: 25px;
-    }
-
-    .footer .site-information a {
-        margin-right: 10px;
-        margin-left: 10px;
-        font-size: 0.8rem;
-    } */
   .aside .news .new-book {
     margin-right: 40px; }
   .aside .news .new-book img {
@@ -741,15 +696,6 @@
     width: 40vh; }
   .grid-container-index .main .intro-text h2 {
     font-size: 1rem; }
-  /*     .nav .lower-nav .search-input {
-        height: 25px;
-        width: 200px;
-    }
-    
-    .nav .lower-nav .search-button {
-        height: 25px;
-        width: 50px;
-    } */
   .grid-container-index .main h2 {
     font-size: 1.1rem; }
   .grid-container-index .main .multimedia .media-element h2 {
@@ -773,30 +719,335 @@
     height: 110px; }
   .grid-container-index .aside .news .new-book h3 {
     font-size: 0.7rem; }
-  /*     .footer .social-media a {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        margin-left: 20px;
-        margin-right: 20px;
-    } */
-  /*     .header img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .header .welcome h1 {
-        font-size: 1.3rem;
-    }
-    
-    .header .welcome h2 {
-        font-size: 0.9rem;
-    } */
   .grid-container-index .main img {
     margin: 20px;
     width: 250px;
     height: 150px; } }
 
-/*------------------ FOOTER ------------------*/
+/*------------------ BOOKS MEDIAQUERIES ------------------*/
+@media screen and (max-width: 1150px) {
+  .grid-container-books .grid-container-books-sections .section .books-content .card {
+    width: 150px;
+    height: 250px; }
+  .grid-container-books .grid-container-books-sections .section .books-content .card img {
+    width: 120px;
+    height: 160px; }
+  .grid-container-books .grid-container-books-sections .section .books-content .card .card-body h5 {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    margin-left: 7px; }
+  .grid-container-books .grid-container-books-sections .section .books-content .card .card-body p {
+    font-size: 0.7rem;
+    margin-top: 5px;
+    margin-left: 7px; }
+  .grid-container-books .grid-container-books-sections .section .books-header .letters li {
+    margin-left: 15px; }
+  .grid-container-books .grid-container-books-sections .section .books-header .letters li a {
+    font-size: 0.9rem; } }
+
+@media screen and (max-width: 720px) {
+  .grid-container-books {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 80px; } }
+
+@media screen and (max-width: 530px) {
+  .grid-container-books {
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px auto 80px; } }
+
+/*-------------- BOOK OF THE DAY MEDIAQUERIES --------------*/
+@media screen and (max-width: 1260px) {
+  .grid-container-book-of-the-day .aside .book-of-the-day-covers .main-cover img {
+    height: 400px;
+    width: 325px;
+    margin: 10px; } }
+
+@media screen and (max-width: 1100px) {
+  .grid-container-book-of-the-day {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px auto auto auto 80px;
+    grid-template-areas: "nav nav nav" "main main main" "aside aside aside" "chat chat chat" "footer footer footer"; }
+  .grid-container-book-of-the-day .aside .book-of-the-day-covers {
+    display: flex;
+    flex-direction: row; }
+  .grid-container-book-of-the-day .aside .book-of-the-day-covers .secondary-covers {
+    display: flex;
+    flex-direction: column; }
+  .grid-container-book-of-the-day .chat-and-comments .chat .intervention p {
+    font-family: 'Linden Hill', serif;
+    font-size: 1.2rem; }
+  .grid-container-book-of-the-day .chat-and-comments .chat h3 {
+    font-size: 1.3rem; } }
+
+@media screen and (max-width: 950px) {
+  .grid-container-book-of-the-day .chat-and-comments .chat .add-discussion input {
+    width: 550px;
+    height: 30px; }
+  .grid-container-book-of-the-day .chat-and-comments .chat .add-discussion button {
+    width: 80px;
+    height: 30px;
+    font-size: 1rem; }
+  .grid-container-book-of-the-day .main .book-of-the-day-info .long-review h3 {
+    margin-top: 20px;
+    font-size: 1.1rem; }
+  .grid-container-book-of-the-day .main .book-of-the-day-info .long-review p {
+    font-size: 0.9rem; }
+  .grid-container-book-of-the-day .main .book-of-the-day-info .information .column h3 {
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 1.1rem; } }
+
+@media screen and (max-width: 720px) {
+  .grid-container-book-of-the-day {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px auto auto auto 80px; }
+  .grid-container-book-of-the-day .main .book-of-the-day-info h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2.7rem; }
+  .grid-container-book-of-the-day .chat-and-comments .chat .add-discussion input {
+    width: 350px;
+    height: 30px; }
+  .grid-container-book-of-the-day .chat-and-comments .chat .add-discussion button {
+    width: 70px;
+    height: 30px;
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 630px) {
+  .grid-container-book-of-the-day .aside .book-of-the-day-covers .main-cover img {
+    height: 300px;
+    width: 225px;
+    margin: 15px; }
+  .grid-container-book-of-the-day .aside .book-of-the-day-covers .secondary-covers img {
+    height: 150;
+    width: 50px;
+    margin: 15px; } }
+
+@media screen and (max-width: 530px) {
+  .grid-container-book-of-the-day {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 180px auto auto auto 80px; }
+  .grid-container-book-of-the-day .main .book-of-the-day-info h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2rem; }
+  .grid-container-book-of-the-day .main .book-of-the-day-info .long-review h3 {
+    margin-top: 20px;
+    font-size: 1rem; }
+  .grid-container-book-of-the-day .main .book-of-the-day-info .long-review p {
+    font-size: 0.8rem; }
+  .grid-container-book-of-the-day .main .book-of-the-day-info .information .column h3 {
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 1rem; } }
+
+@media screen and (max-width: 490px) {
+  .grid-container-book-of-the-day .chat-and-comments .chat .add-discussion input {
+    width: 250px;
+    height: 30px; }
+  .grid-container-book-of-the-day .chat-and-comments .chat .add-discussion button {
+    width: 60px;
+    height: 30px;
+    font-size: 0.7rem; }
+  .grid-container-book-of-the-day .chat-and-comments .chat .intervention p {
+    font-size: 1rem; }
+  .grid-container-book-of-the-day .chat-and-comments .chat .intervention img {
+    display: none; }
+  .grid-container-book-of-the-day .chat-and-comments .chat h3 {
+    font-size: 1.1rem; }
+  .grid-container-book-of-the-day .main .book-of-the-day-info .information .column h3 {
+    margin-right: 20px;
+    margin-top: 7px;
+    font-size: 0.8rem; }
+  .grid-container-book-of-the-day .main .book-of-the-day-info h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.5rem; } }
+
+@media screen and (max-width: 390px) {
+  .grid-container-book-of-the-day .chat-and-comments .chat .add-discussion {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; }
+  .grid-container-book-of-the-day .chat-and-comments .chat .add-discussion button {
+    margin-top: 10px; }
+  .grid-container-book-of-the-day .aside .book-of-the-day-covers .secondary-covers img {
+    display: none; }
+  .grid-container-book-of-the-day .chat-and-comments .chat .intervention p {
+    font-size: 0.9rem; }
+  .grid-container-book-of-the-day .chat-and-comments .chat h3 {
+    font-size: 1rem; }
+  .grid-container-book-of-the-day .main .book-of-the-day-info .information .column h3 {
+    margin-right: 15px;
+    margin-top: 5px;
+    font-size: 0.7rem; }
+  .grid-container-book-of-the-day .main .book-of-the-day-info h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.1rem; } }
+
+/*------------------ CONTACT MEDIAQUERIES ------------------*/
+@media screen and (max-width: 1400px) {
+  .grid-container-contact main .contact-panel .image-section .contact-image {
+    height: 400px;
+    width: 500px;
+    margin: 25px; } }
+
+@media screen and (max-width: 1300px) {
+  .grid-container-contact main .contact-panel .form-section .contact-form .form-data h3 {
+    margin-right: 10px;
+    font-size: 1.2rem; }
+  .grid-container-contact main .contact-panel .form-section .contact-form .form-data textarea {
+    width: 300px; }
+  .grid-container-contact main .contact-panel .image-section h2 {
+    font-size: 1.3rem;
+    font-weight: 600; }
+  .grid-container-contact main .contact-panel .image-section .contact-image {
+    height: 300px;
+    width: 400px;
+    margin: 25px; } }
+
+@media screen and (max-width: 1080px) {
+  .grid-container-contact main .contact-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .grid-container-contact main .contact-panel .form-section {
+    width: 100%; }
+  .grid-container-contact main .contact-panel .image-section h2 {
+    font-size: 2rem;
+    margin-top: 25px; } }
+
+@media screen and (max-width: 720px) {
+  .grid-container-contact {
+    grid-template-rows: 100px auto 80px; } }
+
+@media screen and (max-width: 600px) {
+  .grid-container-contact main .contact-panel .image-section h2 {
+    font-size: 1.5rem; }
+  .grid-container-contact main .contact-panel .image-section .contact-image {
+    height: 200px;
+    width: 300px;
+    margin: 20px; }
+  .grid-container-contact main .contact-panel .form-section .contact-form .form-data textarea {
+    width: 200px; }
+  .grid-container-contact main .contact-panel .form-section .contact-form .form-data {
+    margin: 20px; }
+  .grid-container-contact main .contact-panel .form-section .contact-form .buttons input {
+    height: 40px;
+    width: 90px;
+    font-size: 1rem; } }
+
+@media screen and (max-width: 530px) {
+  .grid-container-contact {
+    grid-template-rows: 180px auto 80px; }
+  .grid-container-contact main .contact-panel .form-section .contact-form .form-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; } }
+
+/*------------------- USER MEDIAQUERIES -------------------*/
+@media screen and (max-width: 1250px) {
+  .grid-container-user .user-main .user-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 12px; }
+  .grid-container-user .user-main .user-name .user-photo img {
+    height: 200px;
+    width: 350px;
+    margin: 25px;
+    box-shadow: 4px 4px goldenrod;
+    border-radius: 15px; }
+  .grid-container-user .user-main .user-data .column h2 {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    margin: 30px; }
+  .grid-container-user .user-main .user-pictures .user-books img {
+    border-radius: 20px;
+    width: 120px;
+    height: 160px;
+    margin: 10px;
+    margin-bottom: 40px;
+    box-shadow: 4px 4px cadetblue; } }
+
+@media screen and (max-width: 900px) {
+  .grid-container-user .user-main .user-pictures .user-books {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .grid-container-user .user-main .user-pictures h2 {
+    margin-top: 5px;
+    font-size: 1.3rem;
+    margin: 35px; } }
+
+@media screen and (max-width: 720px) {
+  .grid-container-user {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto 80px; } }
+
+@media screen and (max-width: 660px) {
+  .grid-container-user .user-main .user-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 10px; }
+  .grid-container-user .user-main .user-name .user-photo img {
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    box-shadow: 3px 3px goldenrod;
+    border-radius: 12px; }
+  .grid-container-user .user-main .user-data .column h2 {
+    margin-top: 5px;
+    font-size: 1rem;
+    margin: 25px; } }
+
+@media screen and (max-width: 530px) {
+  .grid-container-user {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 180px auto 80px; } }
+
+@media screen and (max-width: 400px) {
+  .grid-container-user .user-main .user-name .user-photo {
+    height: 200px;
+    width: 300px;
+    margin: 5px; }
+  .grid-container-user .user-main .user-name .user-photo img {
+    height: 200px;
+    width: 300px;
+    margin: 5px;
+    box-shadow: 2px 2px goldenrod; } }
+
+@media screen and (max-width: 350px) {
+  .grid-container-user .user-main .user-name .user-photo {
+    height: 180px;
+    width: 250px;
+    margin: 4px; }
+  .grid-container-user .user-main .user-name .user-photo img {
+    height: 180px;
+    width: 250px;
+    margin: 4px; }
+  .grid-container-user .user-main .user-name {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 7px; }
+  .grid-container-user .user-main .user-data .column h2 {
+    margin-top: 4px;
+    font-size: 0.7rem;
+    margin: 15px; }
+  .grid-container-user .user-main .user-pictures h2 {
+    margin-top: 4px;
+    font-size: 1rem;
+    margin: 25px; } }
+
+/*------------------ FOOTER MEDIAQUERIES ------------------*/
 @media screen and (max-width: 530px) {
   .footer .social-media a img {
     height: 25px;
