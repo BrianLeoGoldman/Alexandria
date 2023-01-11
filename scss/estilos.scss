@@ -1,1 +1,4 @@
-@import 'base/generales', 'components/nav', 'components/footer';
+@import './base/generales'; 
+@import './components/nav';
+@import './components/book-of-the-day';
+@import './components/footer';

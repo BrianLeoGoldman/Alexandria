@@ -1,0 +1,136 @@
+/* Book of the day */
+.grid-container-book-of-the-day {
+    margin: 0 auto;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px auto auto 80px;
+    grid-template-areas: 
+    "nav nav nav"
+    "aside main main"
+    "chat chat chat"
+    "footer footer footer";
+    .main {
+        .book-of-the-day-info {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 50px;
+            margin-right: 50px;
+            h2 {
+                font-family: 'Linden Hill', serif;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 3.5rem;
+            }
+            .information {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                height: 40%;
+                 .column {
+                    width: 50%;
+                    h3 {
+                        margin-top: 5px;
+                        font-family: 'Metal', cursive;
+                        font-size: 1.3rem;
+                    }
+                 }   
+            }
+            .long-review {
+                height: 60%;
+                font-family: 'Linden Hill', serif;
+                h3 {
+                    font-family: 'Linden Hill', serif;
+                    margin-top: 10px;
+                    font-size: 1.3rem;
+                }
+                p {
+                    font-family: 'Linden Hill', serif;
+                    margin-top: 10px;
+                    font-size: 1.2rem;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    .aside {
+        .book-of-the-day-covers {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+            .main-cover {
+                img {
+                    border: solid 3px black;
+                    height: 500px;
+                    width: 425px;
+                    margin: 10px;
+                }
+            }
+            .secondary-covers {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                img {
+                    border: solid 2px black;
+                    height: 200;
+                    width: 100px;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+    .chat-and-comments {
+        grid-area: chat;
+        background-color: #d9b99b;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .chat {
+            margin: 15px;
+            h3 {
+                font-family: 'Linden Hill', serif;
+                margin-top: 10px;
+                margin-left: 30px;
+                font-size: 1.5rem;
+            }
+            .intervention {
+                margin-left: 30px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+                p {
+                    font-family: 'Linden Hill', serif;
+                    margin-top: 10px;
+                    font-size: 1.5rem;
+                }
+            }
+            .add-discussion {
+                margin-top: 10px;
+                margin-left: 30px;
+                input {
+                    width: 750px;
+                    height: 30px;
+                }
+                button {
+                    width: 100px;
+                    height: 30px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
