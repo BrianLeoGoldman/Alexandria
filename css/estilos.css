@@ -388,6 +388,87 @@
           height: 30px;
           font-size: 1.2rem; }
 
+.grid-container-contact {
+  margin: 0 auto;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px auto 80px;
+  grid-template-areas: "nav" "info" "footer"; }
+  .grid-container-contact main .contact-panel {
+    grid-area: info;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf0e6; }
+    .grid-container-contact main .contact-panel .form-section {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #eed9c4; }
+      .grid-container-contact main .contact-panel .form-section .contact-form {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .grid-container-contact main .contact-panel .form-section .contact-form .form-data {
+          margin: 30px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center; }
+          .grid-container-contact main .contact-panel .form-section .contact-form .form-data h3 {
+            margin-right: 10px;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-family: 'Courier New', Courier, monospace;
+            color: black; }
+        .grid-container-contact main .contact-panel .form-section .contact-form .form-data div .genre {
+          font-size: 1rem;
+          font-style: normal;
+          font-family: 'Courier New', Courier, monospace;
+          color: black; }
+        .grid-container-contact main .contact-panel .form-section .contact-form .form-data-country {
+          justify-content: flex-start; }
+          .grid-container-contact main .contact-panel .form-section .contact-form .form-data-country .countries {
+            font-size: 1rem;
+            font-style: normal;
+            font-family: 'Courier New', Courier, monospace;
+            color: black; }
+        .grid-container-contact main .contact-panel .form-section .contact-form .form-data textarea {
+          width: 400px;
+          height: 100px; }
+        .grid-container-contact main .contact-panel .form-section .contact-form .buttons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center; }
+          .grid-container-contact main .contact-panel .form-section .contact-form .buttons input {
+            height: 50px;
+            width: 130px;
+            font-size: 1.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700; }
+    .grid-container-contact main .contact-panel .image-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #faf0e6;
+      text-align: center; }
+      .grid-container-contact main .contact-panel .image-section h2 {
+        font-size: 2rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 700; }
+      .grid-container-contact main .contact-panel .image-section .contact-image {
+        height: 450px;
+        width: 600px;
+        margin: 30px; }
+
 /* Footer */
 .footer {
   background-color: #fff0db;
