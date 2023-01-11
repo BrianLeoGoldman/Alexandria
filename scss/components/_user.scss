@@ -1,0 +1,83 @@
+.grid-container-user {
+    margin: 0 auto;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px auto 80px;
+    grid-template-areas: 
+    "nav nav"
+    "user user"
+    "footer footer";
+    .user-main {
+        grid-area: user;
+        width: 100%;
+        background-color: #faf0e6;
+        .user-name {
+            background-color: #faf0e6;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;
+            margin: 15px;
+            h2 {
+                text-align: center;
+            }
+            .user-photo {
+                height: 250px;
+                width: 400px;
+                margin: 30px;
+                align-items: center;
+                img {
+                    height: 250px;
+                    width: 400px;
+                    margin: 30px;
+                    box-shadow: 5px 5px goldenrod;
+                    border-radius: 20px;
+                }
+            }
+        }
+        .user-data {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .column {
+                h2 {
+                    margin-top: 5px;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: 1.7rem;
+                    margin: 40px;
+                }
+            }
+        }
+        .user-pictures {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                margin-top: 5px;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 1.5rem;
+                margin: 40px;
+            }
+            .user-books {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                img {
+                    border-radius: 20px;
+                    width: 170px;
+                    height: 210px;
+                    margin: 10px;
+                    margin-bottom: 50px;
+                    box-shadow: 5px 5px cadetblue;
+                }
+            }
+        }
+    }
+}
