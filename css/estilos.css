@@ -197,6 +197,92 @@
         .grid-container-index .aside .news .new-book h3 {
           width: min-content; }
 
+.grid-container-books {
+  margin: 0 auto;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px auto 80px;
+  grid-template-areas: "nav" "main" "footer"; }
+  .grid-container-books .grid-container-books-sections {
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 450px 450px 450px 450px;
+    grid-template-areas: "news" "recommended" "genres" "authors"; }
+    .grid-container-books .grid-container-books-sections .section {
+      text-align: center;
+      background-color: #fff0db;
+      height: 100%; }
+      .grid-container-books .grid-container-books-sections .section h2 {
+        font-family: 'Sacramento', cursive;
+        font-size: 2rem;
+        color: black;
+        margin-top: 10px; }
+      .grid-container-books .grid-container-books-sections .section .books-header {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .grid-container-books .grid-container-books-sections .section .books-header .letters {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          list-style: none; }
+          .grid-container-books .grid-container-books-sections .section .books-header .letters li {
+            margin-left: 25px; }
+            .grid-container-books .grid-container-books-sections .section .books-header .letters li a {
+              font-family: 'Courier New', Courier, monospace;
+              font-size: 1.2rem;
+              font-weight: 700;
+              text-decoration: none;
+              color: black;
+              transition-property: color;
+              transition-duration: 0.5s; }
+              .grid-container-books .grid-container-books-sections .section .books-header .letters li a:hover {
+                color: darkorange; }
+      .grid-container-books .grid-container-books-sections .section .books-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; }
+        .grid-container-books .grid-container-books-sections .section .books-content .card {
+          border-radius: 25px;
+          width: 200px;
+          height: 300px;
+          margin: 15px;
+          background-color: #d9b99b;
+          align-items: center;
+          box-shadow: 10px 10px cadetblue;
+          transition-property: background-color;
+          transition-duration: 1.5s; }
+          .grid-container-books .grid-container-books-sections .section .books-content .card:hover {
+            background-color: khaki; }
+          .grid-container-books .grid-container-books-sections .section .books-content .card img {
+            border-radius: 20px;
+            width: 170px;
+            height: 210px;
+            margin: 5px; }
+          .grid-container-books .grid-container-books-sections .section .books-content .card .card-body {
+            text-align: start; }
+            .grid-container-books .grid-container-books-sections .section .books-content .card .card-body .card-title {
+              font-size: 1.1rem;
+              color: black;
+              margin-top: 7px;
+              margin-left: 10px;
+              font-family: 'Linden Hill', serif;
+              font-weight: 600; }
+            .grid-container-books .grid-container-books-sections .section .books-content .card .card-body .card-text {
+              font-size: 0.9rem;
+              color: black;
+              margin-top: 5px;
+              margin-left: 10px;
+              font-family: 'Linden Hill', serif;
+              font-weight: 400; }
+
 /* Book of the day */
 .grid-container-book-of-the-day {
   margin: 0 auto;
