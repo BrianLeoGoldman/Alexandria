@@ -290,67 +290,73 @@
   margin: 0 auto;
   color: black;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 80px auto auto 80px;
-  grid-template-areas: "nav nav nav" "aside main main" "chat chat chat" "footer footer footer"; }
-  .grid-container-book-of-the-day .main .book-of-the-day-info {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 50px;
-    margin-right: 50px; }
-    .grid-container-book-of-the-day .main .book-of-the-day-info h2 {
-      font-family: 'Linden Hill', serif;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      font-size: 3.5rem; }
-    .grid-container-book-of-the-day .main .book-of-the-day-info .information {
+  grid-template-areas: "nav nav" "aside main" "chat chat" "footer footer"; }
+  .grid-container-book-of-the-day .main {
+    background-color: #faf0e6; }
+    .grid-container-book-of-the-day .main .book-of-the-day-info {
+      grid-area: main;
+      height: auto;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      height: 40%; }
-      .grid-container-book-of-the-day .main .book-of-the-day-info .information .column {
-        width: 50%; }
-        .grid-container-book-of-the-day .main .book-of-the-day-info .information .column h3 {
-          margin-top: 5px;
-          font-family: 'Metal', cursive;
+      margin-left: 50px;
+      margin-right: 50px; }
+      .grid-container-book-of-the-day .main .book-of-the-day-info h2 {
+        font-family: 'Linden Hill', serif;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 3.5rem; }
+      .grid-container-book-of-the-day .main .book-of-the-day-info .information {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        height: 40%; }
+        .grid-container-book-of-the-day .main .book-of-the-day-info .information .column {
+          width: 50%; }
+          .grid-container-book-of-the-day .main .book-of-the-day-info .information .column h3 {
+            margin-top: 5px;
+            font-family: 'Metal', cursive;
+            font-size: 1.3rem; }
+      .grid-container-book-of-the-day .main .book-of-the-day-info .long-review {
+        height: 60%;
+        font-family: 'Linden Hill', serif; }
+        .grid-container-book-of-the-day .main .book-of-the-day-info .long-review h3 {
+          font-family: 'Linden Hill', serif;
+          margin-top: 10px;
           font-size: 1.3rem; }
-    .grid-container-book-of-the-day .main .book-of-the-day-info .long-review {
-      height: 60%;
-      font-family: 'Linden Hill', serif; }
-      .grid-container-book-of-the-day .main .book-of-the-day-info .long-review h3 {
-        font-family: 'Linden Hill', serif;
-        margin-top: 10px;
-        font-size: 1.3rem; }
-      .grid-container-book-of-the-day .main .book-of-the-day-info .long-review p {
-        font-family: 'Linden Hill', serif;
-        margin-top: 10px;
-        font-size: 1.2rem;
-        text-align: justify; }
-  .grid-container-book-of-the-day .aside .book-of-the-day-covers {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px; }
-    .grid-container-book-of-the-day .aside .book-of-the-day-covers .main-cover img {
-      border: solid 3px black;
-      height: 500px;
-      width: 425px;
-      margin: 10px; }
-    .grid-container-book-of-the-day .aside .book-of-the-day-covers .secondary-covers {
+        .grid-container-book-of-the-day .main .book-of-the-day-info .long-review p {
+          font-family: 'Linden Hill', serif;
+          margin-top: 10px;
+          font-size: 1.2rem;
+          text-align: justify; }
+  .grid-container-book-of-the-day .aside {
+    grid-area: aside;
+    background-color: #eed9c4; }
+    .grid-container-book-of-the-day .aside .book-of-the-day-covers {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
-      align-items: center; }
-      .grid-container-book-of-the-day .aside .book-of-the-day-covers .secondary-covers img {
-        border: solid 2px black;
-        height: 200;
-        width: 100px;
+      align-items: center;
+      margin: 30px; }
+      .grid-container-book-of-the-day .aside .book-of-the-day-covers .main-cover img {
+        border: solid 3px black;
+        height: 500px;
+        width: 425px;
         margin: 10px; }
+      .grid-container-book-of-the-day .aside .book-of-the-day-covers .secondary-covers {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .grid-container-book-of-the-day .aside .book-of-the-day-covers .secondary-covers img {
+          border: solid 2px black;
+          height: 200;
+          width: 100px;
+          margin: 10px; }
   .grid-container-book-of-the-day .chat-and-comments {
     grid-area: chat;
     background-color: #d9b99b;
@@ -764,9 +770,9 @@
 
 @media screen and (max-width: 1100px) {
   .grid-container-book-of-the-day {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 80px auto auto auto 80px;
-    grid-template-areas: "nav nav nav" "main main main" "aside aside aside" "chat chat chat" "footer footer footer"; }
+    grid-template-areas: "nav" "main" "aside" "chat" "footer"; }
   .grid-container-book-of-the-day .aside .book-of-the-day-covers {
     display: flex;
     flex-direction: row; }
@@ -799,7 +805,7 @@
 
 @media screen and (max-width: 720px) {
   .grid-container-book-of-the-day {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 100px auto auto auto 80px; }
   .grid-container-book-of-the-day .main .book-of-the-day-info h2 {
     margin-top: 15px;
@@ -825,7 +831,7 @@
 
 @media screen and (max-width: 530px) {
   .grid-container-book-of-the-day {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 180px auto auto auto 80px; }
   .grid-container-book-of-the-day .main .book-of-the-day-info h2 {
     margin-top: 15px;
