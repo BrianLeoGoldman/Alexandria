@@ -1,7 +1,7 @@
 /*------------------ NAV ------------------*/
 
 .nav {
-    background-color: #e4d5b7;
+    background-color: nth($list: $colores, $n: 4);
     grid-area: nav;
     display: flex;
     flex-direction: column;

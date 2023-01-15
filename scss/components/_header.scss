@@ -1,7 +1,7 @@
 /*------------------ HEADER ------------------*/
 
 .header {
-    background-color: #d9b99b;
+    background-color: nth($list: $colores, $n: 5);
     grid-area: header;
     display: flex;
     flex-direction: row;

@@ -24,7 +24,7 @@
         "authors";
         .section {
             text-align: center;
-            background-color: #fff0db;
+            background-color: nth($list: $colores, $n: 2);
             height: 100%;
             h2 {
                 font-family: 'Sacramento', cursive;
@@ -70,7 +70,7 @@
                     width: 200px;
                     height: 300px;
                     margin: 15px;
-                    background-color: #d9b99b;
+                    background-color: nth($list: $colores, $n: 5);
                     align-items: center;
                     box-shadow: 10px 10px cadetblue;
                     transition-property: background-color;

@@ -1,0 +1,9 @@
+
+$colores:
+#faf0e6,
+#fff0db,
+#eed9c4,
+#e4d5b7,
+#d9b99b;
+
+nth($list: $colores, $n: 3)

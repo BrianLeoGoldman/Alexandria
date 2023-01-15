@@ -1,7 +1,7 @@
 /*------------------ FOOTER ------------------*/
 
 .footer {
-    background-color: #fff0db;
+    background-color: nth($list: $colores, $n: 2);
     grid-area: footer;
     .social-media {
         display: flex; 
