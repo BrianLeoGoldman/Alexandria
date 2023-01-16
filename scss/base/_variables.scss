@@ -1,7 +1,5 @@
-/* VARIABLE */
 $poem-image: url("../img/cuaderno.jpg");
 
-/* LIST */
 $colores:
 #faf0e6, /* palette - lighter */
 #fff0db, /* palette - light */
@@ -14,7 +12,6 @@ darkorange, /* hover card */
 khaki, 
 cadetblue; /* box-shadow */
 
-/* LIST */
 $fuentes:
 'Cinzel', /* mayor title */
 'Corinthia', /* manuscript */
@@ -23,7 +20,6 @@ $fuentes:
 'Metal', /* minor title */
 'Sacramento'; /* logo */
 
-/* MAP */
 $button:(
     height: 50px,
     width: 130px,
@@ -33,16 +29,6 @@ $button:(
     margin: 10px,
 );
 
-/* EXTEND */
-%chat-text {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-/* @extend %chat-text; */
-
-/* MIXIN */
 @mixin flex ($display, $direction, $justify, $align) {
     display: $display;
     flex-direction: $direction;
@@ -50,15 +36,14 @@ $button:(
     align-items: $align;
 }
 
-/* MIXIN */
-@mixin text ($size, $family, $weight, $style) {
+@mixin text ($size, $family, $weight, $style, $color) {
     font-size: $size;
     font-family: $family;
     font-weight: $weight;
     font-style: $style;
+    color: $color;
 }
 
-/* MIXIN */
 @mixin margin ($top, $bottom, $left, $right) {
     margin-top: $top;
     margin-bottom: $bottom;

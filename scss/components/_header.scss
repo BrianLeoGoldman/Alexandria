@@ -17,10 +17,7 @@
     .welcome {
         text-align: center;
         h1 {
-            font-size: 5rem;
-            font-family: nth($fuentes, 1);
-            font-weight: 900;
-            color: nth($colores, 6);
+            @include text(5rem, nth($fuentes, 1), 900, normal, nth($colores, 6));
             transition-property: color;
             transition-duration: 1s;
             &:hover {
@@ -28,9 +25,7 @@
             }
         }
         h2 {
-            font-size: 2rem;
-            font-family: nth($fuentes, 1);
-            color: nth($colores, 6);
+            @include text(2rem, nth($fuentes, 1), 900, normal, nth($colores, 6));
         }
     }
 }

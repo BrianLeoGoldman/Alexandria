@@ -9,30 +9,23 @@
         .logo {
             @include flex(flex, row, flex-start, center);
             img {
-                margin-left: 10px;
-                margin-top: 5px;
+                @include margin(5px, 0px, 10px, 0px);
                 height: 40px;
                 width: 40px;
             }
             h1 {
-                margin-left: 10px;
-                font-size: 1.5rem;
-                font-style: normal;
-                font-family: nth($fuentes, 6);
-                color: nth($colores, 6);
+                @include text(1.5rem, nth($fuentes, 6), 500, normal, nth($colores, 6));
+                @include margin(0px, 0px, 10px, 0px);
             }
         }
         .links {
             @include flex(flex, row, flex-end, center);
             list-style: none;
             li {
-                margin-left: 25px;
+                @include margin(0px, 0px, 25px, 0px);
                 a {
-                    font-family: nth($fuentes, 3);
-                    font-size: 1rem;
-                    font-weight: 700;
+                    @include text(1rem, nth($fuentes, 3), 700, normal, nth($colores, 6));
                     text-decoration: none;
-                    color: nth($colores, 6);
                     transition-property: color;
                     transition-duration: 1s;
                     &:hover {
@@ -47,8 +40,7 @@
         .search-input {
             height: 25px;
             width: 500px;
-            margin-left: 20px;
-            margin-right: 20px;
+            @include margin(0px, 0px, 20px, 20px);
         }
         .search-button {
             height: 25px;
