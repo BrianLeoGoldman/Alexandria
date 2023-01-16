@@ -4,10 +4,7 @@
     background-color: nth($colores, 2);
     grid-area: footer;
     .social-media {
-        display: flex; 
-        flex-direction: row; 
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, row, center, center);
         a {
             margin-top: 5px;
             margin-bottom: 5px;
@@ -20,10 +17,7 @@
         }
     }
     .site-information {
-        display: flex; 
-        flex-direction: row; 
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, row, center, center);
         a {
             margin-right: 10px;
             margin-left: 10px;

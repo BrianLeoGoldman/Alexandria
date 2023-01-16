@@ -3,10 +3,7 @@
 .header {
     background-color: nth($colores, 5);
     grid-area: header;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex(flex, row, space-evenly, center);
     img {
         width: 150px;
         height: 150px;

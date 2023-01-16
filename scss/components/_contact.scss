@@ -14,29 +14,18 @@
        .contact-panel {
         grid-area: info;
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, row, center, center);
         background-color: nth($colores, 1);
         .form-section {
             width: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex(flex, column, center, center);
             background-color: nth($colores, 3);
             .contact-form {
                 margin: 30px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+                @include flex(flex, column, space-between, center);
                 .form-data {
                     margin: 30px;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
+                    @include flex(flex, row, space-between, center);
                     h3 {
                         margin-right: 10px;
                         font-size: 1.5rem;
@@ -72,25 +61,20 @@
                     }
                 }
                 .buttons {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    align-items: center;
+                    @include flex(flex, row, space-around, center);
                     input {
                         height: map-get($button, height);
                         width: map-get($button, width);
                         font-size: map-get($button, font-size);
                         font-family: map-get($button, font-family);
                         font-weight: map-get($button, font-weight);
+                        margin: map-get($button, margin);
                     }
                 }
             }
         }
         .image-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex(flex, column, center, center);
             background-color: nth($colores, 1);
             text-align: center;
             h2 {
