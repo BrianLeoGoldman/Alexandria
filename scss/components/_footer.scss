@@ -1,0 +1,29 @@
+/*------------------ FOOTER ------------------*/
+
+.footer {
+    background-color: nth($colores, 2);
+    grid-area: footer;
+    .social-media {
+        @include flex(flex, row, center, center);
+        a {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 30px;
+            margin-right: 30px;
+            img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+    .site-information {
+        @include flex(flex, row, center, center);
+        a {
+            margin-right: 10px;
+            margin-left: 10px;
+            font-size: 1rem;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+}

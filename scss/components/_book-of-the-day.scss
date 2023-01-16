@@ -1,0 +1,112 @@
+/*------------------ BOOK OF THE DAY ------------------*/
+
+.grid-container-book-of-the-day {
+    margin: 0 auto;
+    color: nth($colores, 6);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px auto auto 80px;
+    grid-template-areas: 
+    "nav nav"
+    "aside main"
+    "chat chat"
+    "footer footer";
+    .main {
+        background-color: nth($colores, 1);
+        .book-of-the-day-info {
+            grid-area: main;
+            height: auto;
+            @include flex(flex, column, center, flex-start);
+            @include margin(0px, 0px, 50px, 50px);
+            h2 {
+                @include text(3.5rem, nth($fuentes, 4), 700, normal);
+                @include margin(10px, 10px, 0px, 0px);
+            }
+            .information {
+                @include flex(flex, row, center, flex-start);
+                height: 40%;
+                 .column {
+                    width: 50%;
+                    h3 {
+                        @include text(1.3rem, nth($fuentes, 5), 500, normal);
+                        @include margin(5px, 0px, 0px, 0px);
+                    }
+                 }   
+            }
+            .long-review {
+                height: 60%;
+                h3 {
+                    @include text(1.3rem, nth($fuentes, 4), 300, normal);
+                    @include margin(10px, 0px, 0px, 0px);
+                }
+                p {
+                    @include text(1.2rem, nth($fuentes, 4), 300, normal);
+                    @include margin(10px, 0px, 0px, 0px);
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    .aside {
+        grid-area: aside;
+        background-color: nth($colores,  3);
+        .book-of-the-day-covers {
+            @include flex(flex, column, center, center);
+            @include margin(30px, 30px, 30px, 30px);
+            .main-cover {
+                img {
+                    @include margin(10px, 10px, 10px, 10px);
+                    border: solid 3px nth($colores, 6);
+                    height: 500px;
+                    width: 425px;
+                }
+            }
+            .secondary-covers {
+                @include flex(flex, row, center, center);
+                img {
+                    @include margin(10px, 10px, 10px, 10px);
+                    border: solid 2px nth($colores, 6);
+                    height: 150px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+    .chat-and-comments {
+        grid-area: chat;
+        background-color: nth($colores, 5);
+        width: 100%;
+        @include flex(flex, row, flex-start, center);
+        .chat {
+            @include margin(15px, 15px, 15px, 15px);
+            h3 {
+                @include text(1.2rem, nth($fuentes, 4), 700, normal);
+                @include margin(10px, 0px, 20px, 0px);
+            }
+            .intervention {
+                @include margin(0px, 0px, 30px, 0px);
+                @include flex(flex, row, flex-start, center);
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+                p {
+                    @include text(1.2rem, nth($fuentes, 4), 300, normal);
+                    @include margin(10px, 0px, 20px, 0px);
+                }
+            }
+            .add-discussion {
+                @include margin(10px, 0px, 30px, 0px);
+                input {
+                    width: 750px;
+                    height: 30px;
+                }
+                button {
+                    width: 100px;
+                    height: 30px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
