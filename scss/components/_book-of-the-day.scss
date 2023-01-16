@@ -2,7 +2,7 @@
 
 .grid-container-book-of-the-day {
     margin: 0 auto;
-    color: black;
+    color: nth($colores, 6);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80px auto auto 80px;
@@ -12,7 +12,7 @@
     "chat chat"
     "footer footer";
     .main {
-        background-color: nth($list: $colores, $n: 1);
+        background-color: nth($colores, 1);
         .book-of-the-day-info {
             grid-area: main;
             height: auto;
@@ -62,7 +62,7 @@
     }
     .aside {
         grid-area: aside;
-        background-color: nth($list: $colores, $n: 3);
+        background-color: nth($colores,  3);
         .book-of-the-day-covers {
             display: flex;
             flex-direction: column;
@@ -71,7 +71,7 @@
             margin: 30px;
             .main-cover {
                 img {
-                    border: solid 3px black;
+                    border: solid 3px nth($colores, 6);
                     height: 500px;
                     width: 425px;
                     margin: 10px;
@@ -83,7 +83,7 @@
                 justify-content: center;
                 align-items: center;
                 img {
-                    border: solid 2px black;
+                    border: solid 2px nth($colores, 6);
                     height: 200;
                     width: 100px;
                     margin: 10px;
@@ -93,7 +93,7 @@
     }
     .chat-and-comments {
         grid-area: chat;
-        background-color: nth($list: $colores, $n: 5);
+        background-color: nth($colores, 5);
         width: 100%;
         display: flex;
         flex-direction: row;

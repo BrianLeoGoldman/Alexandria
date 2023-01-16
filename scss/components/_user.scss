@@ -2,7 +2,7 @@
 
 .grid-container-user {
     margin: 0 auto;
-    color: black;
+    color: nth($colores, 6);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80px auto 80px;
@@ -13,9 +13,9 @@
     .user-main {
         grid-area: user;
         width: 100%;
-        background-color: nth($list: $colores, $n: 1);
+        background-color: nth($colores, 1);
         .user-name {
-            background-color: nth($list: $colores, $n: 1);
+            background-color: nth($colores, 1);
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -36,7 +36,7 @@
                     height: 250px;
                     width: 400px;
                     margin: 30px;
-                    box-shadow: 5px 5px goldenrod;
+                    box-shadow: 5px 5px nth($colores, 10);
                     border-radius: 20px;
                 }
             }
@@ -77,7 +77,7 @@
                     height: 210px;
                     margin: 10px;
                     margin-bottom: 50px;
-                    box-shadow: 5px 5px cadetblue;
+                    box-shadow: 5px 5px nth($colores, 10);
                 }
             }
         }

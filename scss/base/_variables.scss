@@ -1,9 +1,27 @@
-
 $colores:
-#faf0e6,
-#fff0db,
-#eed9c4,
-#e4d5b7,
-#d9b99b;
+#faf0e6, /* palette - lighter */
+#fff0db, /* palette - light */
+#eed9c4, /* palette - medium */
+#e4d5b7, /* palette - dark */
+#d9b99b, /* palette - darker */
+black, /* text */
+darkgoldenrod, /* hover */
+darkorange, 
+khaki, 
+cadetblue; /* box-shadow */
 
-nth($list: $colores, $n: 3)
+$fuentes:
+'Cinzel',
+'Corinthia',
+'Courier New',
+'Linden Hill',
+'Metal',
+'Sacramento';
+
+$button:(
+    height: 50px,
+    width: 130px,
+    font-size: 1.5rem,
+    font-family: 'Courier New',
+    font-weight: 700,
+)

@@ -1,7 +1,7 @@
 /*------------------ HEADER ------------------*/
 
 .header {
-    background-color: nth($list: $colores, $n: 5);
+    background-color: nth($colores, 5);
     grid-area: header;
     display: flex;
     flex-direction: row;
@@ -23,17 +23,17 @@
             font-size: 5rem;
             font-family: 'Cinzel', serif;
             font-weight: 900;
-            color: black;
+            color: nth($colores, 6);
             transition-property: color;
             transition-duration: 1s;
             &:hover {
-                color: #ebe11f;
+                color: nth($colores, 7);
             }
         }
         h2 {
             font-size: 2rem;
             font-family: 'Cinzel', serif;
-            color: black;
+            color: nth($colores, 6);
         }
     }
 }

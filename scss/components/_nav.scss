@@ -1,7 +1,7 @@
 /*------------------ NAV ------------------*/
 
 .nav {
-    background-color: nth($list: $colores, $n: 4);
+    background-color: nth($colores, 3);
     grid-area: nav;
     display: flex;
     flex-direction: column;
@@ -25,10 +25,10 @@
             }
             h1 {
                 margin-left: 10px;
-                font-size: 21.5remem;
+                font-size: 1.5rem;
                 font-style: normal;
                 font-family: 'Cinzel', serif;
-                color: black;
+                color: nth($colores, 6);
             }
         }
         .links {
@@ -43,11 +43,11 @@
                     font-size: 1rem;
                     font-weight: 700;
                     text-decoration: none;
-                    color: black;
+                    color: nth($colores, 6);
                     transition-property: color;
                     transition-duration: 1s;
                     &:hover {
-                        color: darkgoldenrod;
+                        color: nth($colores, 7);
                     }
                 }
             }

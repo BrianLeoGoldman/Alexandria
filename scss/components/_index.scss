@@ -2,7 +2,7 @@
 
 .grid-container-index {
     margin: 0 auto;
-    color: black;
+    color: nth($colores, 6);
     display: grid;
     grid-template-columns: 1fr 1.5fr 0.5fr;
     grid-template-rows: 80px 150px auto 80px;
@@ -12,7 +12,7 @@
     "main main aside"
     "footer footer footer";
     .main {
-        background-color: nth($list: $colores, $n: 3);
+        background-color: nth($colores, 3);
         grid-area: main;
         display: flex;
         flex-direction: column;
@@ -25,14 +25,14 @@
             transition-property: box-shadow;
             transition-duration: 1.5s;
             &:hover {
-                box-shadow: 5px 5px darkslategray;
+                box-shadow: 5px 5px nth($colores, 10);
             }
         }
         h2 {
             font-size: 1.5rem;
             font-style: normal;
             font-family: 'Courier New', Courier, monospace;
-            color: black;    
+            color: nth($colores, 6);   
         }
         .intro-text {
             background-image: url("../img/cuaderno.jpg");
@@ -44,12 +44,12 @@
             transition-property: box-shadow;
             transition-duration: 1.5s;
             &:hover {
-                box-shadow: 5px 5px darkslategray;
+                box-shadow: 5px 5px nth($colores, 10);
             }
             h2 {
                 font-family: 'Corinthia', serif;
                 font-size: 2rem;
-                color: black;
+                color: nth($colores, 6);
             }
         }
         .multimedia {
@@ -69,7 +69,7 @@
                     font-size: 1.5rem;
                     font-style: normal;
                     font-family: 'Courier New', Courier, monospace;
-                    color: black;
+                    color: nth($colores, 6);
                 }
                 iframe {
                     margin: 15px;
@@ -80,7 +80,7 @@
         }
     }
     .aside {
-        background-color: nth($list: $colores, $n: 1);
+        background-color: nth($colores, 1);
         grid-area: aside;
         display: flex;
         flex-direction: column;
@@ -92,7 +92,7 @@
             font-size: 1.5rem;
             font-style: normal;
             font-family: 'Courier New', Courier, monospace;
-            color: black;
+            color: nth($colores, 6);
         }
         .news {
             display: flex;
