@@ -27,7 +27,7 @@
                 margin-left: 10px;
                 font-size: 1.5rem;
                 font-style: normal;
-                font-family: 'Cinzel', serif;
+                font-family: nth($fuentes, 6);
                 color: nth($colores, 6);
             }
         }
@@ -39,7 +39,7 @@
             li {
                 margin-left: 25px;
                 a {
-                    font-family: 'Courier New', Courier, monospace;
+                    font-family: nth($fuentes, 3);
                     font-size: 1rem;
                     font-weight: 700;
                     text-decoration: none;

@@ -5,18 +5,18 @@ $colores:
 #e4d5b7, /* palette - dark */
 #d9b99b, /* palette - darker */
 black, /* text */
-darkgoldenrod, /* hover */
-darkorange, 
+darkgoldenrod, /* hover text */
+darkorange, /* hover card */
 khaki, 
 cadetblue; /* box-shadow */
 
 $fuentes:
-'Cinzel',
-'Corinthia',
-'Courier New',
-'Linden Hill',
-'Metal',
-'Sacramento';
+'Cinzel', /* mayor title */
+'Corinthia', /* manuscript */
+'Courier New', /* nav & letters */
+'Linden Hill', /* descriptive text */
+'Metal', /* minor title */
+'Sacramento'; /* logo */
 
 $button:(
     height: 50px,

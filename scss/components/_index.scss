@@ -31,7 +31,7 @@
         h2 {
             font-size: 1.5rem;
             font-style: normal;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: nth($fuentes, 3);
             color: nth($colores, 6);   
         }
         .intro-text {
@@ -47,7 +47,7 @@
                 box-shadow: 5px 5px nth($colores, 10);
             }
             h2 {
-                font-family: 'Corinthia', serif;
+                font-family: nth($fuentes, 2);
                 font-size: 2rem;
                 color: nth($colores, 6);
             }
@@ -68,7 +68,7 @@
                 h2 {
                     font-size: 1.5rem;
                     font-style: normal;
-                    font-family: 'Courier New', Courier, monospace;
+                    font-family: nth($fuentes, 3);
                     color: nth($colores, 6);
                 }
                 iframe {
@@ -91,7 +91,7 @@
             margin: 10px;
             font-size: 1.5rem;
             font-style: normal;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: nth($fuentes, 3);
             color: nth($colores, 6);
         }
         .news {

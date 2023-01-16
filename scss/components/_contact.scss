@@ -50,7 +50,7 @@
                         .genre {
                             font-size: 1rem;
                             font-style: normal;
-                            font-family: 'Courier New', Courier, monospace;
+                            font-family: nth($fuentes, 3);
                             color: nth($colores, 6);
                         }
                     }
@@ -60,7 +60,7 @@
                     .countries {
                         font-size: 1rem;
                         font-style: normal;
-                        font-family: 'Courier New', Courier, monospace;
+                        font-family: nth($fuentes, 3);
                         color: nth($colores, 6);
                     }
                     
@@ -95,7 +95,7 @@
             text-align: center;
             h2 {
                 font-size: 2rem;
-                font-family: 'Courier New', Courier, monospace;
+                font-family: nth($fuentes, 3);
                 font-weight: 700;
             }
             .contact-image {

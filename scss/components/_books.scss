@@ -27,7 +27,7 @@
             background-color: nth($colores,  2);
             height: 100%;
             h2 {
-                font-family: 'Sacramento', cursive;
+                font-family: nth($fuentes, 6);
                 font-size: 2rem;
                 color: nth($colores, 6);
                 margin-top: 10px;
@@ -46,7 +46,7 @@
                     li {
                         margin-left: 25px;
                         a {
-                            font-family: 'Courier New', Courier, monospace;
+                            font-family: nth($fuentes, 3);
                             font-size: 1.2rem;
                             font-weight: 700;
                             text-decoration: none;
@@ -68,7 +68,7 @@
                 .card {
                     border-radius: 25px;
                     width: 200px;
-                    height: 300px;
+                    height: auto;
                     margin: 15px;
                     background-color: nth($colores, 5);
                     align-items: center;
@@ -76,7 +76,7 @@
                     transition-property: background-color;
                     transition-duration: 1.5s;
                     &:hover {
-                        background-color: nth($colores, 7);
+                        background-color: nth($colores, 8);
                     }
                     img {
                         border-radius: 20px;
@@ -91,7 +91,7 @@
                             color: nth($colores, 6);
                             margin-top: 7px;
                             margin-left: 10px;
-                            font-family: 'Linden Hill', serif;
+                            font-family: nth($fuentes, 4);
                             font-weight: 600;
                         }
                         .card-text {
@@ -99,7 +99,7 @@
                             color: nth($colores, 6);
                             margin-top: 5px;
                             margin-left: 10px;
-                            font-family: 'Linden Hill', serif;
+                            font-family: nth($fuentes, 4);
                             font-weight: 400;
                         }
                     }
