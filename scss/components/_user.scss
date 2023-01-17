@@ -17,22 +17,20 @@
         .user-name {
             background-color: nth($colores, 1);
             @include flex(flex, row, center, center);
-            font-size: 2rem;
-            font-family: nth($fuentes, 3);
-            font-weight: 700;
-            margin: 15px;
+            @include text(2rem, nth($fuentes, 3), 700, normal, nth($colores, 6));
+            @include margin(15px, 15px, 15px, 15px);
             h2 {
                 text-align: center;
             }
             .user-photo {
                 height: 250px;
                 width: 400px;
-                margin: 30px;
+                @include margin(30px, 30px, 30px, 30px);
                 align-items: center;
                 img {
                     height: 250px;
                     width: 400px;
-                    margin: 30px;
+                    @include margin(30px, 30px, 30px, 30px);
                     box-shadow: 5px 5px nth($colores, 10);
                     border-radius: 20px;
                 }
@@ -42,29 +40,24 @@
             @include flex(flex, row, center, center);
             .column {
                 h2 {
-                    margin-top: 5px;
-                    font-family: nth($fuentes, 3);
-                    font-size: 1.7rem;
-                    margin: 40px;
+                    @include text(1.7rem, nth($fuentes, 3), 600, normal, nth($colores, 6));
+                    @include margin(5px, 40px, 40px, 40px);
                 }
             }
         }
         .user-pictures {
             @include flex(flex, column, center, center);
             h2 {
-                margin-top: 5px;
-                font-family: nth($fuentes, 3);
-                font-size: 1.5rem;
-                margin: 40px;
+                @include text(1.5rem, nth($fuentes, 3), 600, normal, nth($colores, 6));
+                @include margin(5px, 40px, 40px, 40px);
             }
             .user-books {
                 @include flex(flex, row, center, center);
                 img {
+                    @include margin(10px, 50px, 10px, 10px);
                     border-radius: 20px;
                     width: 170px;
                     height: 210px;
-                    margin: 10px;
-                    margin-bottom: 50px;
                     box-shadow: 5px 5px nth($colores, 10);
                 }
             }

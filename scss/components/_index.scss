@@ -16,7 +16,7 @@
         grid-area: main;
         @include flex(flex, column, space-evenly, center);
         img {
-            margin: 20px;
+            @include margin(20px, 20px, 20px, 20px);
             width: 700px;
             height: 400px;
             transition-property: box-shadow;
@@ -26,15 +26,12 @@
             }
         }
         h2 {
-            font-size: 1.5rem;
-            font-style: normal;
-            font-family: nth($fuentes, 3);
-            color: nth($colores, 6);   
+            @include text(1.5rem, nth($fuentes, 3), 500, normal, nth($colores, 6));  
         }
         .intro-text {
             background-image: $poem-image;
             border-radius: 25px;
-            margin: 20px;
+            @include margin(20px, 20px, 20px, 20px);
             padding: 20px;
             width: 100vh;
             text-align: center;
@@ -44,26 +41,20 @@
                 box-shadow: 5px 5px nth($colores, 10);
             }
             h2 {
-                font-family: nth($fuentes, 2);
-                font-size: 2rem;
-                color: nth($colores, 6);
+                @include text(2rem, nth($fuentes, 2), 500, normal, nth($colores, 6));
             }
         }
         .multimedia {
             @include flex(flex, row, space-between, center);
             .media-element {
-                margin-top: 10px;
-                margin-bottom: 10px;
+                @include margin(10px, 10px, 0px, 0px);
                 @include flex(flex, column, space-evenly, center);
                 text-align: center;
                 h2 {
-                    font-size: 1.5rem;
-                    font-style: normal;
-                    font-family: nth($fuentes, 3);
-                    color: nth($colores, 6);
+                    @include text(1.5rem, nth($fuentes, 3), 900, normal, nth($colores, 6));
                 }
                 iframe {
-                    margin: 15px;
+                    @include margin(15px, 15px, 15px, 15px);
                     width: 350px;
                     height: 250px;
                 }
@@ -75,18 +66,14 @@
         grid-area: aside;
         @include flex(flex, column, space-evenly, center);
         text-align: center;
-        h1 {
-            margin: 10px;
-            font-size: 1.5rem;
-            font-style: normal;
-            font-family: nth($fuentes, 3);
-            color: nth($colores, 6);
+        h2 {
+            @include text(1.5rem, nth($fuentes, 3), 900, normal, nth($colores, 6));
+            @include margin(10px, 10px, 10px, 10px);
         }
         .news {
             @include flex(flex, column, space-evenly, center);
             .new-book {
-                margin-top: 10px;
-                margin-bottom: 10px;
+                @include margin(10px, 10px, 0px, 0px);
                 @include flex(flex, column, space-evenly, center);
                 display: flex;
                 flex-direction: column;

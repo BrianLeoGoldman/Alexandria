@@ -27,10 +27,8 @@
             background-color: nth($colores,  2);
             height: 100%;
             h2 {
-                font-family: nth($fuentes, 6);
-                font-size: 2rem;
-                color: nth($colores, 6);
-                margin-top: 10px;
+                @include text(2rem, nth($fuentes, 6), 600, normal, nth($colores, 6));
+                @include margin(10px, 0px, 0px, 0px);
             }
             .books-header {
                 text-align: center;
@@ -39,13 +37,10 @@
                     @include flex(flex, row, flex-end, center);
                     list-style: none;
                     li {
-                        margin-left: 25px;
+                        @include margin(0px, 0px, 25px, 0px);
                         a {
-                            font-family: nth($fuentes, 3);
-                            font-size: 1.2rem;
-                            font-weight: 700;
+                            @include text(1.2rem, nth($fuentes, 3), 700, normal, nth($colores, 6));
                             text-decoration: none;
-                            color: nth($colores, 6);
                             transition-property: color;
                             transition-duration: 0.5s;
                             &:hover {
@@ -61,7 +56,7 @@
                     border-radius: 25px;
                     width: 200px;
                     height: auto;
-                    margin: 15px;
+                    @include margin(15px, 15px, 15px, 15px);
                     background-color: nth($colores, 5);
                     align-items: center;
                     box-shadow: 10px 10px nth($colores, 10);
@@ -74,25 +69,17 @@
                         border-radius: 20px;
                         width: 170px;
                         height: 210px;
-                        margin: 5px;
+                        @include margin(5px, 5px, 5px, 5px);
                     }
                     .card-body {
                         text-align: start;
                         .card-title {
-                            font-size: 1.1rem;
-                            color: nth($colores, 6);
-                            margin-top: 7px;
-                            margin-left: 10px;
-                            font-family: nth($fuentes, 4);
-                            font-weight: 600;
+                            @include text(1.1rem, nth($fuentes, 4), 600, normal, nth($colores, 6));
+                            @include margin(7px, 0px, 10px, 0px);
                         }
                         .card-text {
-                            font-size: 0.9rem;
-                            color: nth($colores, 6);
-                            margin-top: 5px;
-                            margin-left: 10px;
-                            font-family: nth($fuentes, 4);
-                            font-weight: 400;
+                            @include text(0.9rem, nth($fuentes, 4), 400, normal, nth($colores, 6));
+                            @include margin(5px, 0px, 10px, 0px);
                         }
                     }
                 }

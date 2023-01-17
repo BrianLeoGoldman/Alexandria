@@ -21,36 +21,27 @@
             @include flex(flex, column, center, center);
             background-color: nth($colores, 3);
             .contact-form {
-                margin: 30px;
+                @include margin(30px, 30px, 30px, 30px);
                 @include flex(flex, column, space-between, center);
                 .form-data {
-                    margin: 30px;
+                    @include margin(30px, 30px, 30px, 30px);
                     @include flex(flex, row, space-between, center);
                     h3 {
-                        margin-right: 10px;
-                        font-size: 1.5rem;
-                        font-style: normal;
-                        font-family: nth($fuentes, 3);
-                        color: nth($colores, 6);
+                        @include text(1.5rem, nth($fuentes, 3), 700, normal, nth($colores, 6));
+                        @include margin(0px, 0px, 0px, 10px);
                     }
                 }
                 .form-data {
                     div {
                         .genre {
-                            font-size: 1rem;
-                            font-style: normal;
-                            font-family: nth($fuentes, 3);
-                            color: nth($colores, 6);
+                            @include text(1rem, nth($fuentes, 3), 300, normal, nth($colores, 6));
                         }
                     }
                 }
                 .form-data-country {
                     justify-content: flex-start;
                     .countries {
-                        font-size: 1rem;
-                        font-style: normal;
-                        font-family: nth($fuentes, 3);
-                        color: nth($colores, 6);
+                        @include text(1rem, nth($fuentes, 3), 300, normal, nth($colores, 6));
                     }
                     
                 }
@@ -78,14 +69,12 @@
             background-color: nth($colores, 1);
             text-align: center;
             h2 {
-                font-size: 2rem;
-                font-family: nth($fuentes, 3);
-                font-weight: 700;
+                @include text(2rem, nth($fuentes, 3), 700, normal, nth($colores, 6));
             }
             .contact-image {
+                @include margin(30px, 30px, 30px, 30px);
                 height: 450px;
                 width: 600px;
-                margin: 30px;
             }
         }
        } 
