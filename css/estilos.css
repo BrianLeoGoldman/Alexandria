@@ -207,7 +207,7 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center; }
-    .grid-container-index .aside h1 {
+    .grid-container-index .aside h2 {
       font-size: 1.5rem;
       font-family: "Courier New";
       font-weight: 900;
@@ -867,7 +867,7 @@
     font-size: 1.1rem; }
   .grid-container-index .main .multimedia .media-element h2 {
     font-size: 1.1rem; }
-  .grid-container-index .aside h1 {
+  .grid-container-index .aside h2 {
     font-size: 1.1rem; }
   .grid-container-index .main .multimedia .media-element iframe {
     margin: 15px;

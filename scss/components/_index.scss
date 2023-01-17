@@ -66,7 +66,7 @@
         grid-area: aside;
         @include flex(flex, column, space-evenly, center);
         text-align: center;
-        h1 {
+        h2 {
             @include text(1.5rem, nth($fuentes, 3), 900, normal, nth($colores, 6));
             @include margin(10px, 10px, 10px, 10px);
         }
