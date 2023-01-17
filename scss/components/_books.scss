@@ -1,0 +1,89 @@
+/*------------------ BOOKS ------------------*/
+
+.grid-container-books {
+    margin: 0 auto;
+    color: nth($colores, 6);
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 80px auto 80px;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+    .grid-container-books-sections {
+        width: 100%;
+        margin: 0 auto;
+        color: nth($colores, 6);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px 450px 450px 450px;
+        grid-template-areas: 
+        "news"
+        "recommended"
+        "genres"
+        "authors";
+        .section {
+            text-align: center;
+            background-color: nth($colores,  2);
+            height: 100%;
+            h2 {
+                @include text(2rem, nth($fuentes, 6), 600, normal, nth($colores, 6));
+                @include margin(10px, 0px, 0px, 0px);
+            }
+            .books-header {
+                text-align: center;
+                @include flex(flex, row, center, center);
+                .letters {
+                    @include flex(flex, row, flex-end, center);
+                    list-style: none;
+                    li {
+                        @include margin(0px, 0px, 25px, 0px);
+                        a {
+                            @include text(1.2rem, nth($fuentes, 3), 700, normal, nth($colores, 6));
+                            text-decoration: none;
+                            transition-property: color;
+                            transition-duration: 0.5s;
+                            &:hover {
+                                color: nth($colores, 7);
+                            }
+                        }
+                    }
+                }
+            }
+            .books-content {
+                @include flex(flex, row, space-around, center);
+                .card {
+                    border-radius: 25px;
+                    width: 200px;
+                    height: auto;
+                    @include margin(15px, 15px, 15px, 15px);
+                    background-color: nth($colores, 5);
+                    align-items: center;
+                    box-shadow: 10px 10px nth($colores, 10);
+                    transition-property: background-color;
+                    transition-duration: 1.5s;
+                    &:hover {
+                        background-color: nth($colores, 8);
+                    }
+                    img {
+                        border-radius: 20px;
+                        width: 170px;
+                        height: 210px;
+                        @include margin(5px, 5px, 5px, 5px);
+                    }
+                    .card-body {
+                        text-align: start;
+                        .card-title {
+                            @include text(1.1rem, nth($fuentes, 4), 600, normal, nth($colores, 6));
+                            @include margin(7px, 0px, 10px, 0px);
+                        }
+                        .card-text {
+                            @include text(0.9rem, nth($fuentes, 4), 400, normal, nth($colores, 6));
+                            @include margin(5px, 0px, 10px, 0px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+/*------------------ CONTACT ------------------*/
+
+.grid-container-contact {
+    margin: 0 auto;
+    color: nth($colores, 6);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px auto 80px;
+    grid-template-areas: 
+    "nav"
+    "info"
+    "footer";
+    main {
+       .contact-panel {
+        grid-area: info;
+        width: 100%;
+        @include flex(flex, row, center, center);
+        background-color: nth($colores, 1);
+        .form-section {
+            width: 50%;
+            @include flex(flex, column, center, center);
+            background-color: nth($colores, 3);
+            .contact-form {
+                @include margin(30px, 30px, 30px, 30px);
+                @include flex(flex, column, space-between, center);
+                .form-data {
+                    @include margin(30px, 30px, 30px, 30px);
+                    @include flex(flex, row, space-between, center);
+                    h3 {
+                        @include text(1.5rem, nth($fuentes, 3), 700, normal, nth($colores, 6));
+                        @include margin(0px, 0px, 0px, 10px);
+                    }
+                }
+                .form-data {
+                    div {
+                        .genre {
+                            @include text(1rem, nth($fuentes, 3), 300, normal, nth($colores, 6));
+                        }
+                    }
+                }
+                .form-data-country {
+                    justify-content: flex-start;
+                    .countries {
+                        @include text(1rem, nth($fuentes, 3), 300, normal, nth($colores, 6));
+                    }
+                    
+                }
+                .form-data {
+                    textarea {
+                        width: 400px;
+                        height: 100px;
+                    }
+                }
+                .buttons {
+                    @include flex(flex, row, space-around, center);
+                    input {
+                        height: map-get($button, height);
+                        width: map-get($button, width);
+                        font-size: map-get($button, font-size);
+                        font-family: map-get($button, font-family);
+                        font-weight: map-get($button, font-weight);
+                        margin: map-get($button, margin);
+                    }
+                }
+            }
+        }
+        .image-section {
+            @include flex(flex, column, center, center);
+            background-color: nth($colores, 1);
+            text-align: center;
+            h2 {
+                @include text(2rem, nth($fuentes, 3), 700, normal, nth($colores, 6));
+            }
+            .contact-image {
+                @include margin(30px, 30px, 30px, 30px);
+                height: 450px;
+                width: 600px;
+            }
+        }
+       } 
+    }
+}

@@ -280,7 +280,7 @@
     height: 200px;
 }
 
-.new-book h2 {
+.new-book h3 {
     width: min-content;
 }
 
@@ -711,6 +711,42 @@
     margin: 5px;
 }
 
+@media screen and (max-width:1150px) {
+    .card {
+        width: 150px;
+        height: 250px;
+    }
+
+    .card img {
+        width: 120px;
+        height: 160px;
+    }
+
+    .card-body h5 {
+        font-size: 0.9rem;
+        margin-top: 5px;
+        margin-left: 7px;
+    }
+    
+    .card-body p {
+        font-size: 0.7rem;
+        margin-top: 5px;
+        margin-left: 7px;
+    }
+
+    .letters li {
+        margin-left: 15px;
+    }
+    
+    .letters li a {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    
+}
+
 @media screen and (max-width:720px) {
     .grid-container-books {
         grid-template-columns: 1fr ;
@@ -1096,16 +1132,26 @@
     margin: 0 auto;
     color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 80px auto 80px;
     grid-template-areas: 
-    "nav nav"
-    "form picture"
-    "footer footer";
+    "nav"
+    "info"
+    "footer";
+}
+
+.contact-panel {
+    grid-area: info;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf0e6;
 }
 
 .form-section {
-    grid-area: form;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1142,6 +1188,11 @@
     color: black;
 }
 
+.form-data textarea {
+    width: 400px;
+    height: 100px;
+}
+
 .form-data-country {
     justify-content: flex-start;
 }
@@ -1176,7 +1227,6 @@
 }
 
 .image-section {
-    grid-area: picture;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1195,6 +1245,103 @@
     height: 450px;
     width: 600px;
     margin: 30px;
+}
+
+@media screen and (max-width:1400px) {
+    .contact-image {
+        height: 400px;
+        width: 500px;
+        margin: 25px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+
+    .form-data h3 {
+        margin-right: 10px;
+        font-size: 1.2rem;
+    }
+
+    .form-data textarea {
+        width: 300px;
+    }
+
+    .image-section h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .contact-image {
+        height: 300px;
+        width: 400px;
+        margin: 25px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .contact-panel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+
+    .image-section h2 {
+        font-size: 2rem;
+        margin-top: 25px;
+    }   
+}
+
+@media screen and (max-width:720px) {
+
+    .grid-container-contact {
+        grid-template-rows: 100px auto 80px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .image-section h2 {
+        font-size: 1.5rem;
+    }   
+
+    .contact-image {
+        height: 200px;
+        width: 300px;
+        margin: 20px;
+    }
+
+    .form-data textarea {
+        width: 200px;
+    }
+
+    .contact-form div {
+        margin: 20px;
+    }
+
+    .buttons input {
+        height: 40px;
+        width: 90px;
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:530px) {
+    .grid-container-contact {
+        grid-template-rows: 180px auto 80px;
+    }
+
+    .form-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 /*------------------- USER -------------------*/
@@ -1218,7 +1365,6 @@
 }
 
 .user-name {
-    width: 100%;
     background-color: #faf0e6;
     display: flex;
     flex-direction: row;
@@ -1230,10 +1376,15 @@
     margin: 15px;
 }
 
+.user-name h2 {
+    text-align: center;
+}
+
 .user-photo {
     height: 250px;
     width: 400px;
     margin: 30px;
+    align-items: center;
 }
 
 .user-photo img {
@@ -1286,5 +1437,143 @@
     margin: 10px;
     margin-bottom: 50px;
     box-shadow: 5px 5px cadetblue;
+}
+
+@media screen and (max-width:1250px) {
+
+    .user-name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 12px;
+    }
+
+    .user-photo img {
+        height: 200px;
+        width: 350px;
+        margin: 25px;
+        box-shadow: 4px 4px goldenrod;
+        border-radius: 15px;
+    }
+
+    .column h2 {
+        margin-top: 5px;
+        font-size: 1.2rem;
+        margin: 30px
+    }
+
+    .user-books img {
+        border-radius: 20px;
+        width: 120px;
+        height: 160px;
+        margin: 10px;
+        margin-bottom: 40px;
+        box-shadow: 4px 4px cadetblue;
+    }
+
+    
+}
+
+@media screen and (max-width:900px) {
+
+    .user-books {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-pictures h2 {
+        margin-top: 5px;
+        font-size: 1.3rem;
+        margin: 35px
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    .grid-container-user {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px auto 80px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .user-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin: 10px;
+    }
+
+    .user-photo img {
+        height: 200px;
+        width: 300px;
+        margin: 20px;
+        box-shadow: 3px 3px goldenrod;
+        border-radius: 12px;
+    }
+
+    .column h2 {
+        margin-top: 5px;
+        font-size: 1rem;
+        margin: 25px
+    }
+    
+}
+
+@media screen and (max-width:530px) {
+    .grid-container-user {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 180px auto 80px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .user-photo {
+        height: 200px;
+        width: 300px;
+        margin: 5px;
+    }
+    .user-photo img {
+        height: 200px;
+        width: 300px;
+        margin: 5px;
+        box-shadow: 2px 2px goldenrod;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .user-photo {
+        height: 180px;
+        width: 250px;
+        margin: 4px;
+    }
+    .user-photo img {
+        height: 180px;
+        width: 250px;
+        margin: 4px;
+    }
+
+    .user-name {
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 7px;
+    }
+
+    .column h2 {
+        margin-top: 4px;
+        font-size: 0.7rem;
+        margin: 15px
+    }
+
+    .user-pictures h2 {
+        margin-top: 4px;
+        font-size: 1rem;
+        margin: 25px
+    }
 }
 
