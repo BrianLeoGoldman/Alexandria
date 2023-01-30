@@ -564,6 +564,8 @@
             margin-bottom: 0px;
             margin-left: 0px;
             margin-right: 10px; }
+          .grid-container-contact main .contact-panel .form-section .contact-form .form-data input {
+            height: 30px; }
         .grid-container-contact main .contact-panel .form-section .contact-form .form-data div .genre {
           font-size: 1rem;
           font-family: "Courier New";
@@ -674,7 +676,15 @@
         margin-top: 5px;
         margin-bottom: 40px;
         margin-left: 40px;
-        margin-right: 40px; }
+        margin-right: 40px;
+        padding: 3px;
+        background-color: #d9b99b;
+        border-radius: 10px;
+        box-shadow: 5px 5px cadetblue;
+        transition-property: background-color;
+        transition-duration: 1.5s; }
+        .grid-container-user .user-main .user-data .column h2:hover {
+          background-color: khaki; }
     .grid-container-user .user-main .user-pictures {
       display: flex;
       flex-direction: column;

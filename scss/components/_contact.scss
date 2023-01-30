@@ -30,6 +30,9 @@
                         @include text(1.5rem, nth($fuentes, 3), 700, normal, nth($colores, 6));
                         @include margin(0px, 0px, 0px, 10px);
                     }
+                    input {
+                        height: 30px;
+                    }
                 }
                 .form-data {
                     div {
