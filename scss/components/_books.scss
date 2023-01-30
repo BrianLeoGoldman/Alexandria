@@ -74,11 +74,11 @@
                     .card-body {
                         text-align: start;
                         .card-title {
-                            @include text(1.1rem, nth($fuentes, 4), 600, normal, nth($colores, 6));
+                            @include text(1.1rem, nth($fuentes, 7), 600, normal, nth($colores, 6));
                             @include margin(7px, 0px, 10px, 0px);
                         }
                         .card-text {
-                            @include text(0.9rem, nth($fuentes, 4), 400, normal, nth($colores, 6));
+                            @include text(0.9rem, nth($fuentes, 7), 400, normal, nth($colores, 6));
                             @include margin(5px, 0px, 10px, 0px);
                         }
                     }

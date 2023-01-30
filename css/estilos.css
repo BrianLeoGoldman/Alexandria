@@ -10,7 +10,7 @@
   box-sizing: border-box; }
 
 /* box-shadow */
-/* logo */
+/* books names */
 /*------------------ NAV ------------------*/
 .nav {
   background-color: #eed9c4;
@@ -331,7 +331,7 @@
             text-align: start; }
             .grid-container-books .grid-container-books-sections .section .books-content .card .card-body .card-title {
               font-size: 1.1rem;
-              font-family: "Linden Hill";
+              font-family: "Roboto";
               font-weight: 600;
               font-style: normal;
               color: black;
@@ -341,7 +341,7 @@
               margin-right: 0px; }
             .grid-container-books .grid-container-books-sections .section .books-content .card .card-body .card-text {
               font-size: 0.9rem;
-              font-family: "Linden Hill";
+              font-family: "Roboto";
               font-weight: 400;
               font-style: normal;
               color: black;
@@ -912,15 +912,45 @@
   .grid-container-books .grid-container-books-sections .section .books-header .letters li a {
     font-size: 0.9rem; } }
 
+@media screen and (max-width: 950px) {
+  .grid-container-books .grid-container-books-sections {
+    grid-template-rows: 300px 300px 300px 300px; }
+  .grid-container-books .grid-container-books-sections .section .books-content .card {
+    width: 100px;
+    height: 200px; }
+  .grid-container-books .grid-container-books-sections .section .books-content .card img {
+    width: 80px;
+    height: 120px; }
+  .grid-container-books .grid-container-books-sections .section .books-content .card .card-body .card-title {
+    font-size: 0.7rem;
+    margin-top: 5px;
+    margin-left: 5px; }
+  .grid-container-books .grid-container-books-sections .section .books-content .card .card-body .card-text {
+    font-size: 0.6rem;
+    margin-top: 5px;
+    margin-left: 5px; }
+  .grid-container-books .grid-container-books-sections .section .books-header .letters li {
+    margin-left: 12px; }
+  .grid-container-books .grid-container-books-sections .section .books-header .letters li a {
+    font-size: 0.7rem; } }
+
 @media screen and (max-width: 720px) {
   .grid-container-books {
     grid-template-columns: 1fr;
     grid-template-rows: 100px auto 80px; } }
 
+@media screen and (max-width: 650px) {
+  .grid-container-books .grid-container-books-sections .section .books-content {
+    display: none; }
+  .grid-container-books .grid-container-books-sections {
+    grid-template-rows: 100px 100px 100px 100px; } }
+
 @media screen and (max-width: 530px) {
   .grid-container-books {
     grid-template-columns: 1fr;
-    grid-template-rows: 180px auto 80px; } }
+    grid-template-rows: 180px auto 80px; }
+  .grid-container-books .grid-container-books-sections .section .books-header .letters li {
+    margin-left: 5px; } }
 
 /*-------------- BOOK OF THE DAY MEDIAQUERIES --------------*/
 @media screen and (max-width: 1260px) {
