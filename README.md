@@ -1,8 +1,12 @@
 # Alexandria
 
-## Proyecto para curso de Desarrollo Web
+## Proyecto final para curso de Desarrollo Web de CoderHouse
 
-|      Alumno        |      Mail                      |     usuario Github   |
-| ----------------   | ------------------------------ | -------------------  |
-|  Brian Goldman     |      leonel89011@gmail.com     |     BrianLeoGoldman  |
-|                    |                                |                      |
+### Alumno: Brian Leonel Goldman
+### Email: leonel89011@gmail.com
+### Usuario GitHub: BrianLeoGoldman
+
+### Link repositorio: https://github.com/BrianLeoGoldman/PFGoldman
+### Link GitHub Pages: https://brianleogoldman.github.io/PFGoldman/
+### Link 000webhost:
+
