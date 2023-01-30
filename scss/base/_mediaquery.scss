@@ -283,6 +283,42 @@
     }
 }
 
+@media screen and (max-width:950px) {
+    .grid-container-books .grid-container-books-sections {
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+    
+    .grid-container-books .grid-container-books-sections .section .books-content .card {
+        width: 100px;
+        height: 200px;
+    }
+
+    .grid-container-books .grid-container-books-sections .section .books-content .card img {
+        width: 80px;
+        height: 120px;
+    }
+
+    .grid-container-books .grid-container-books-sections .section .books-content .card .card-body .card-title {
+        font-size: 0.7rem;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    
+    .grid-container-books .grid-container-books-sections .section .books-content .card .card-body .card-text {
+        font-size: 0.6rem;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .grid-container-books .grid-container-books-sections .section .books-header .letters li {
+        margin-left: 12px;
+    }
+    
+    .grid-container-books .grid-container-books-sections .section .books-header .letters li a {
+        font-size: 0.7rem;
+    }
+}
+
 @media screen and (max-width:720px) {
     .grid-container-books {
         grid-template-columns: 1fr ;
@@ -290,10 +326,24 @@
     }
 }
 
+@media screen and (max-width:650px) {
+    .grid-container-books .grid-container-books-sections .section .books-content {
+        display: none;
+    }
+
+    .grid-container-books .grid-container-books-sections {
+        grid-template-rows: 100px 100px 100px 100px;
+    }
+}
+
 @media screen and (max-width:530px) {
     .grid-container-books {
         grid-template-columns: 1fr ;
         grid-template-rows: 180px auto 80px;
+    }
+
+    .grid-container-books .grid-container-books-sections .section .books-header .letters li {
+        margin-left: 5px;
     }
 }
 
